@@ -1,2 +1,10 @@
+<head>
+  <%= javascript_include_tag "//www.google.com/jsapi", "chartkick" %>
+</head>
 <h1>Motions#index</h1>
 <p>Find me in app/views/motions/index.html.erb</p>
+<%= timeline [
+  ["was1", "2015-01-01", "2015-10-01"],
+  ["was2", "2015-02-01", "2015-08-01"],
+  ["was3", "2015-03-01", "2015-09-01"]
+] %>
