@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  hostid: MyString
+  flag: false
+  switchtime: 2015-10-21 16:31:52
+
+two:
+  hostid: MyString
+  flag: false
+  switchtime: 2015-10-21 16:31:52
