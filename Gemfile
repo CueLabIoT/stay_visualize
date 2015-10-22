@@ -1,6 +1,9 @@
 source 'https://rubygems.org'
+gem 'therubyracer'
+gem 'less-rails'
+gem 'twitter-bootstrap-rails'
 
-gem 'mysql2','~>0.3.20'
+gem 'mysql2', '~> 0.3.13'
 gem 'therubyracer'
 gem 'execjs'
 gem "chartkick"
@@ -46,4 +49,3 @@ group :development do
   # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
   gem 'spring'
 end
-
