@@ -3,11 +3,33 @@
 </head>
 <h1>Motions#index</h1>
 <p>Find me in app/views/motions/index.html.erb</p>
+
+<%if false %>
 <%= timeline [
   ["was1", "2015-01-01 10:00", "2015-01-01 11:00"],
   ["was1", "2015-01-01 11:30", "2015-01-01 12:00"],
   ["was1", "2015-01-01 13:30", "2015-01-01 14:00"],
   ["was2", "2015-01-01 10:30", "2015-01-01 12:00"],
   ["was2", "2015-01-01 15:30", "2015-01-01 16:00"],
-
 ] %>
+<% end %>
+
+<br>
+<br>
+<table>
+  <tr>
+    <th>Time</th>
+    <th>いる/いない</th>
+    <th></th>
+  </tr>
+<% @motion_data.each do |motion| %>
+  <tr>
+    <td><%= motion.switchtime %></td>
+    <td>
+      <% if motion.flag then %>いる
+      <% else %>いない
+      <% end %>
+    </td>
+  </tr>
+<% end %>
+</table>
