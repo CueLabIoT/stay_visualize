@@ -1,7 +1,10 @@
-# This file should contain all the record creation needed to seed the database with its default values.
-# The data can then be loaded with the rake db:seed (or created alongside the db with db:setup).
-#
-# Examples:
-#
-#   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
-#   Mayor.create(name: 'Emanuel', city: cities.first)
+Motion.create(:hostid => 'pi1',:flag => 1,:switchtime => '2015-09-09 16:40:02')
+Motion.create(:hostid => 'pi1',:flag => 0,:switchtime => '2015-09-09 16:40:32')
+Motion.create(:hostid => 'pi1',:flag => 1,:switchtime => '2015-09-09 16:53:12')
+Motion.create(:hostid => 'pi1',:flag => 0,:switchtime => '2015-09-09 16:53:42')
+Motion.create(:hostid => 'pi1',:flag => 1,:switchtime => '2015-09-09 17:01:01')
+Motion.create(:hostid => 'pi1',:flag => 0,:switchtime => '2015-09-09 17:01:31')
+Motion.create(:hostid => 'pi1',:flag => 1,:switchtime => '2015-09-09 17:03:41')
+Motion.create(:hostid => 'pi1',:flag => 0,:switchtime => '2015-09-09 17:04:11')
+Motion.create(:hostid => 'pi1',:flag => 1,:switchtime => '2015-09-09 17:09:02')
+Motion.create(:hostid => 'pi1',:flag => 0,:switchtime => '2015-09-09 17:09:32')
