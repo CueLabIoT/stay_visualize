@@ -3,6 +3,8 @@ gem 'therubyracer'
 gem 'less-rails'
 gem 'twitter-bootstrap-rails'
 
+#DB gems(develop:mysql2,service:ibm_db)
+#gem 'ibm_db'
 gem 'mysql2', '~> 0.3.13'
 gem 'therubyracer'
 gem 'execjs'
