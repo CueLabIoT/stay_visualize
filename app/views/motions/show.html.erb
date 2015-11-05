@@ -1,0 +1,28 @@
+<head>
+  <%= javascript_include_tag "//www.google.com/jsapi", "chartkick" %>
+</head>
+<body>
+<h1>Motions#show</h1>
+<p>Find me in app/views/motions/show.html.erb</p>
+
+<%= timeline @motionAry %>
+
+<br>
+<table>
+  <tr>
+    <th>Time</th>
+    <th>いる/いない</th>
+    <th></th>
+  </tr>
+<% @motion_data_of_day.each do |motion| %>
+  <tr>
+    <td><%= motion.switchtime %></td>
+    <td>
+      <% if motion.flag then %>いる
+      <% else %>いない
+      <% end %>
+    </td>
+  </tr>
+<% end %>
+</table>
+</body>
