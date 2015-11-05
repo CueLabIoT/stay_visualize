@@ -1,5 +1,8 @@
 Rails.application.routes.draw do
+
   get 'motions/index'
+  get 'motions/show/:date' => 'motions#show'
+  post 'motions/show' => 'motions#show'
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
