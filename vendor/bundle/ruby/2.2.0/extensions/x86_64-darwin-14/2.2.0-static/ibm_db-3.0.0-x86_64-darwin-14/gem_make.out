@@ -1,0 +1,96 @@
+/Users/systems/.rbenv/versions/2.2.2/bin/ruby -r ./siteconf20151105-91506-950e95.rb extconf_MacOS.rb
+extconf_MacOS.rb:93: warning: already initialized constant DOWNLOADLINK
+extconf_MacOS.rb:44: warning: previous definition of DOWNLOADLINK was here
+extconf_MacOS.rb:163: warning: already initialized constant IBM_DB_HOME
+extconf_MacOS.rb:20: warning: previous definition of IBM_DB_HOME was here
+extconf_MacOS.rb:165: warning: already initialized constant IBM_DB_INCLUDE
+extconf_MacOS.rb:150: warning: previous definition of IBM_DB_INCLUDE was here
+extconf_MacOS.rb:166: warning: already initialized constant IBM_DB_LIB
+extconf_MacOS.rb:151: warning: previous definition of IBM_DB_LIB was here
+Detected 64-bit Ruby
+ 
+Detected platform - MacOS darwin64
+Environment variable IBM_DB_HOME is not set. Downloading and setting up the DB2 client driver
+creating gil_release_version
+creating unicode_support_version
+checking for SQLConnect() in -ldb2... yes
+checking for gil_release_version... yes
+checking for unicode_support_version... yes
+creating Makefile
+
+make "DESTDIR=" clean
+
+make "DESTDIR="
+compiling ibm_db.c
+ibm_db.c:106:9: warning: 'STRCASECMP' macro redefined [-Wmacro-redefined]
+#define STRCASECMP strcasecmp
+        ^
+/Users/systems/.rbenv/versions/2.2.2/include/ruby-2.2.0/ruby/ruby.h:1801:9: note: previous definition is here
+#define STRCASECMP(s1, s2) (st_locale_insensitive_strcasecmp((s1), (s2)))
+        ^
+ibm_db.c:698:12: warning: implicit declaration of function 'rb_thread_call_without_gvl' is invalid in C99 [-Wimplicit-function-declaration]
+                                return rb_thread_call_without_gvl(func, data1, ubf, data2);                        
+                                       ^
+ibm_db.c:2360:41: warning: cast to 'SQLPOINTER' (aka 'void *') from smaller integer type 'SQLINTEGER' (aka 'int') [-Wint-to-void-pointer-cast]
+        handleAttr_args->valuePtr    =  (SQLPOINTER)(enable_numeric_literals);
+                                        ^
+ibm_db.c:2304:32: warning: 'memset' call operates on objects of type 'SQLWCHAR' (aka 'unsigned short') while the size is based on a different type 'SQLWCHAR *' (aka 'unsigned short *') [-Wsizeof-pointer-memaccess]
+      memset(server, 0, sizeof(server));
+             ~~~~~~            ^~~~~~
+ibm_db.c:2304:32: note: did you mean to dereference the argument to 'sizeof' (and multiply it by the number of elements)?
+      memset(server, 0, sizeof(server));
+                               ^~~~~~
+ibm_db.c:2433:1: warning: control may reach end of non-void function [-Wreturn-type]
+}
+^
+ibm_db.c:2538:26: warning: comparison between pointer and integer ('VALUE' (aka 'unsigned long') and 'void *')
+                if(helper_args-> entry == NULL)
+                   ~~~~~~~~~~~~~~~~~~~ ^  ~~~~
+ibm_db.c:3328:37: warning: cast to 'SQLPOINTER' (aka 'void *') from smaller integer type 'SQLINTEGER' (aka 'int') [-Wint-to-void-pointer-cast]
+        handleAttr_args->valuePtr = (SQLPOINTER)autocommit;
+                                    ^
+ibm_db.c:5676:18: warning: format string is not a string literal (potentially insecure) [-Wformat-security]
+        rb_warn( RSTRING_PTR(error) );
+                 ^~~~~~~~~~~~~~~~~~
+/Users/systems/.rbenv/versions/2.2.2/include/ruby-2.2.0/ruby/ruby.h:866:5: note: expanded from macro 'RSTRING_PTR'
+    (!(RBASIC(str)->flags & RSTRING_NOEMBED) ? \
+    ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+ibm_db.c:5816:20: warning: format string is not a string literal (potentially insecure) [-Wformat-security]
+          rb_warn( RSTRING_PTR(error) );
+                   ^~~~~~~~~~~~~~~~~~
+/Users/systems/.rbenv/versions/2.2.2/include/ruby-2.2.0/ruby/ruby.h:866:5: note: expanded from macro 'RSTRING_PTR'
+    (!(RBASIC(str)->flags & RSTRING_NOEMBED) ? \
+    ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+ibm_db.c:7027:16: warning: format string is not a string literal (potentially insecure) [-Wformat-security]
+      rb_warn( RSTRING_PTR(error) );
+               ^~~~~~~~~~~~~~~~~~
+/Users/systems/.rbenv/versions/2.2.2/include/ruby-2.2.0/ruby/ruby.h:866:5: note: expanded from macro 'RSTRING_PTR'
+    (!(RBASIC(str)->flags & RSTRING_NOEMBED) ? \
+    ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+ibm_db.c:9284:14: warning: format string is not a string literal (potentially insecure) [-Wformat-security]
+    rb_warn( RSTRING_PTR(error) );
+             ^~~~~~~~~~~~~~~~~~
+/Users/systems/.rbenv/versions/2.2.2/include/ruby-2.2.0/ruby/ruby.h:866:5: note: expanded from macro 'RSTRING_PTR'
+    (!(RBASIC(str)->flags & RSTRING_NOEMBED) ? \
+    ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+ibm_db.c:10574:20: warning: format string is not a string literal (potentially insecure) [-Wformat-security]
+          rb_warn( RSTRING_PTR(error) );
+                   ^~~~~~~~~~~~~~~~~~
+/Users/systems/.rbenv/versions/2.2.2/include/ruby-2.2.0/ruby/ruby.h:866:5: note: expanded from macro 'RSTRING_PTR'
+    (!(RBASIC(str)->flags & RSTRING_NOEMBED) ? \
+    ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+ibm_db.c:10584:20: warning: format string is not a string literal (potentially insecure) [-Wformat-security]
+          rb_warn( RSTRING_PTR(error) );
+                   ^~~~~~~~~~~~~~~~~~
+/Users/systems/.rbenv/versions/2.2.2/include/ruby-2.2.0/ruby/ruby.h:866:5: note: expanded from macro 'RSTRING_PTR'
+    (!(RBASIC(str)->flags & RSTRING_NOEMBED) ? \
+    ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+ibm_db.c:11252:6: warning: comparison of address of 'connection' equal to a null pointer is always false [-Wtautological-pointer-compare]
+        if(&connection == NULL)
+            ^~~~~~~~~~    ~~~~
+14 warnings generated.
+compiling ruby_ibm_db_cli.c
+linking shared-object ibm_db.bundle
+
+make "DESTDIR=" install
+/usr/bin/install -c -m 0755 ibm_db.bundle ./.gem.20151105-91506-19raens

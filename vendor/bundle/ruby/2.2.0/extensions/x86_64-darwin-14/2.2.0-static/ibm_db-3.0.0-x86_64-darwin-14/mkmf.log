@@ -1,0 +1,97 @@
+gil_release_version is:
+/* begin */
+1: #ifndef GIL_RELEASE_VERSION
+2: #define GIL_RELEASE_VERSION
+3: #endif
+/* end */
+
+unicode_support_version is:
+/* begin */
+1: #ifndef UNICODE_SUPPORT_VERSION
+2: #define UNICODE_SUPPORT_VERSION
+3: #endif
+/* end */
+
+have_library: checking for SQLConnect() in -ldb2... -------------------- yes
+
+"clang -o conftest -I/Users/systems/.rbenv/versions/2.2.2/include/ruby-2.2.0/x86_64-darwin14 -I/Users/systems/.rbenv/versions/2.2.2/include/ruby-2.2.0/ruby/backward -I/Users/systems/.rbenv/versions/2.2.2/include/ruby-2.2.0 -I. -I/Users/systems/work/stay_visualize/vendor/bundle/ruby/2.2.0/gems/ibm_db-3.0.0-x86_64-darwin-14/ext/../lib/clidriver/include -I/Users/systems/.rbenv/versions/2.2.2/include  -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT    -O3 -Wno-error=shorten-64-to-32  -pipe conftest.c  -L/Users/systems/work/stay_visualize/vendor/bundle/ruby/2.2.0/gems/ibm_db-3.0.0-x86_64-darwin-14/ext/../lib/clidriver/lib -L. -L/Users/systems/.rbenv/versions/2.2.2/lib -L. -L/Users/systems/.rbenv/versions/2.2.2/lib  -fstack-protector     -lruby-static -framework CoreFoundation  -lpthread -ldl -lobjc "
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: int main(int argc, char **argv)
+4: {
+5:   return 0;
+6: }
+/* end */
+
+"clang -o conftest -I/Users/systems/.rbenv/versions/2.2.2/include/ruby-2.2.0/x86_64-darwin14 -I/Users/systems/.rbenv/versions/2.2.2/include/ruby-2.2.0/ruby/backward -I/Users/systems/.rbenv/versions/2.2.2/include/ruby-2.2.0 -I. -I/Users/systems/work/stay_visualize/vendor/bundle/ruby/2.2.0/gems/ibm_db-3.0.0-x86_64-darwin-14/ext/../lib/clidriver/include -I/Users/systems/.rbenv/versions/2.2.2/include  -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT    -O3 -Wno-error=shorten-64-to-32  -pipe conftest.c  -L/Users/systems/work/stay_visualize/vendor/bundle/ruby/2.2.0/gems/ibm_db-3.0.0-x86_64-darwin-14/ext/../lib/clidriver/lib -L. -L/Users/systems/.rbenv/versions/2.2.2/lib -L. -L/Users/systems/.rbenv/versions/2.2.2/lib  -fstack-protector     -lruby-static -framework CoreFoundation -ldb2  -lpthread -ldl -lobjc "
+conftest.c:13:57: error: use of undeclared identifier 'SQLConnect'
+int t(void) { void ((*volatile p)()); p = (void ((*)()))SQLConnect; return 0; }
+                                                        ^
+1 error generated.
+checked program was:
+/* begin */
+ 1: #include "ruby.h"
+ 2: 
+ 3: /*top*/
+ 4: extern int t(void);
+ 5: int main(int argc, char **argv)
+ 6: {
+ 7:   if (argc > 1000000) {
+ 8:     printf("%p", &t);
+ 9:   }
+10: 
+11:   return 0;
+12: }
+13: int t(void) { void ((*volatile p)()); p = (void ((*)()))SQLConnect; return 0; }
+/* end */
+
+"clang -o conftest -I/Users/systems/.rbenv/versions/2.2.2/include/ruby-2.2.0/x86_64-darwin14 -I/Users/systems/.rbenv/versions/2.2.2/include/ruby-2.2.0/ruby/backward -I/Users/systems/.rbenv/versions/2.2.2/include/ruby-2.2.0 -I. -I/Users/systems/work/stay_visualize/vendor/bundle/ruby/2.2.0/gems/ibm_db-3.0.0-x86_64-darwin-14/ext/../lib/clidriver/include -I/Users/systems/.rbenv/versions/2.2.2/include  -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT    -O3 -Wno-error=shorten-64-to-32  -pipe conftest.c  -L/Users/systems/work/stay_visualize/vendor/bundle/ruby/2.2.0/gems/ibm_db-3.0.0-x86_64-darwin-14/ext/../lib/clidriver/lib -L. -L/Users/systems/.rbenv/versions/2.2.2/lib -L. -L/Users/systems/.rbenv/versions/2.2.2/lib  -fstack-protector     -lruby-static -framework CoreFoundation -ldb2  -lpthread -ldl -lobjc "
+conftest.c:13:15: warning: implicit declaration of function 'SQLConnect' is invalid in C99 [-Wimplicit-function-declaration]
+int t(void) { SQLConnect(); return 0; }
+              ^
+1 warning generated.
+checked program was:
+/* begin */
+ 1: #include "ruby.h"
+ 2: 
+ 3: /*top*/
+ 4: extern int t(void);
+ 5: int main(int argc, char **argv)
+ 6: {
+ 7:   if (argc > 1000000) {
+ 8:     printf("%p", &t);
+ 9:   }
+10: 
+11:   return 0;
+12: }
+13: int t(void) { SQLConnect(); return 0; }
+/* end */
+
+--------------------
+
+have_header: checking for gil_release_version... -------------------- yes
+
+"clang -E -I/Users/systems/.rbenv/versions/2.2.2/include/ruby-2.2.0/x86_64-darwin14 -I/Users/systems/.rbenv/versions/2.2.2/include/ruby-2.2.0/ruby/backward -I/Users/systems/.rbenv/versions/2.2.2/include/ruby-2.2.0 -I. -I/Users/systems/work/stay_visualize/vendor/bundle/ruby/2.2.0/gems/ibm_db-3.0.0-x86_64-darwin-14/ext/../lib/clidriver/include -I/Users/systems/.rbenv/versions/2.2.2/include  -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT    -O3 -Wno-error=shorten-64-to-32  -pipe  conftest.c -o conftest.i"
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: #include <gil_release_version>
+/* end */
+
+--------------------
+
+have_header: checking for unicode_support_version... -------------------- yes
+
+"clang -E -I/Users/systems/.rbenv/versions/2.2.2/include/ruby-2.2.0/x86_64-darwin14 -I/Users/systems/.rbenv/versions/2.2.2/include/ruby-2.2.0/ruby/backward -I/Users/systems/.rbenv/versions/2.2.2/include/ruby-2.2.0 -I. -I/Users/systems/work/stay_visualize/vendor/bundle/ruby/2.2.0/gems/ibm_db-3.0.0-x86_64-darwin-14/ext/../lib/clidriver/include -I/Users/systems/.rbenv/versions/2.2.2/include  -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT    -O3 -Wno-error=shorten-64-to-32  -pipe  conftest.c -o conftest.i"
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: #include <unicode_support_version>
+/* end */
+
+--------------------
+

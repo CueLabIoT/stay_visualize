@@ -1,0 +1,3 @@
+#ifndef GIL_RELEASE_VERSION
+#define GIL_RELEASE_VERSION
+#endif

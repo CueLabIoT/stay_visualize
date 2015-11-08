@@ -17,11 +17,6 @@ default: &default
   password: 
   socket: /tmp/mysql.sock
 
-staging
-  adapter: ibm_db
-  encoding: utf8
-  pool: 5
-
 development:
   <<: *default
   database: stay_visualize_development
