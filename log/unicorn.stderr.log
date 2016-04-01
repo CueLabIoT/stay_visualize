@@ -1,0 +1,414 @@
+I, [2016-02-16T01:12:58.084207 #2823]  INFO -- : Refreshing Gem list
+I, [2016-02-16T01:13:00.545206 #2823]  INFO -- : listening on addr=/var/run/unicorn/unicorn_stay_visualize.sock fd=10
+I, [2016-02-16T01:13:00.545417 #2823]  INFO -- : worker=0 spawning...
+I, [2016-02-16T01:13:00.546572 #2823]  INFO -- : master process ready
+I, [2016-02-16T01:13:00.547374 #2854]  INFO -- : worker=0 spawned pid=2854
+I, [2016-02-16T01:13:00.547512 #2854]  INFO -- : worker=0 ready
+I, [2016-02-16T01:13:26.277246 #2823]  INFO -- : reaped #<Process::Status: pid 2854 exit 0> worker=0
+I, [2016-02-16T01:13:26.277549 #2823]  INFO -- : master complete
+I, [2016-02-16T01:20:18.534450 #3011]  INFO -- : Refreshing Gem list
+I, [2016-02-16T01:20:20.047225 #3011]  INFO -- : unlinking existing socket=/var/run/unicorn/unicorn_stay_visualize.sock
+I, [2016-02-16T01:20:20.047511 #3011]  INFO -- : listening on addr=/var/run/unicorn/unicorn_stay_visualize.sock fd=11
+I, [2016-02-16T01:20:20.047640 #3011]  INFO -- : worker=0 spawning...
+I, [2016-02-16T01:20:20.048780 #3011]  INFO -- : master process ready
+I, [2016-02-16T01:20:20.053975 #3016]  INFO -- : worker=0 spawned pid=3016
+I, [2016-02-16T01:20:20.054141 #3016]  INFO -- : worker=0 ready
+/root/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/unicorn-5.0.1/lib/unicorn/http_server.rb:195:in `pid=': Already running on PID:3011 (or pid=/var/run/unicorn/unicorn_stay_visualize.pid is stale) (ArgumentError)
+	from /root/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/unicorn-5.0.1/lib/unicorn/http_server.rb:127:in `start'
+	from /root/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/unicorn-5.0.1/bin/unicorn_rails:209:in `<top (required)>'
+	from /root/.rbenv/versions/2.2.3/bin/unicorn_rails:23:in `load'
+	from /root/.rbenv/versions/2.2.3/bin/unicorn_rails:23:in `<main>'
+I, [2016-02-16T01:34:29.973629 #3011]  INFO -- : reaped #<Process::Status: pid 3016 exit 0> worker=0
+I, [2016-02-16T01:34:29.973924 #3011]  INFO -- : master complete
+I, [2016-02-16T01:34:35.488464 #3465]  INFO -- : Refreshing Gem list
+config.eager_load is set to nil. Please update your config/environments/*.rb files accordingly:
+
+  * development - set it to false
+  * test - set it to false (unless you use a tool that preloads your test environment)
+  * production - set it to true
+
+I, [2016-02-16T01:34:36.897778 #3465]  INFO -- : unlinking existing socket=/var/run/unicorn/unicorn_stay_visualize.sock
+I, [2016-02-16T01:34:36.898097 #3465]  INFO -- : listening on addr=/var/run/unicorn/unicorn_stay_visualize.sock fd=11
+I, [2016-02-16T01:34:36.898235 #3465]  INFO -- : worker=0 spawning...
+I, [2016-02-16T01:34:36.899361 #3465]  INFO -- : master process ready
+I, [2016-02-16T01:34:36.905257 #3470]  INFO -- : worker=0 spawned pid=3470
+I, [2016-02-16T01:34:36.905413 #3470]  INFO -- : worker=0 ready
+I, [2016-02-16T01:35:37.237569 #3465]  INFO -- : reaped #<Process::Status: pid 3470 exit 0> worker=0
+I, [2016-02-16T01:35:37.237718 #3465]  INFO -- : master complete
+I, [2016-02-16T01:36:52.315611 #3569]  INFO -- : Refreshing Gem list
+I, [2016-02-16T01:36:54.003887 #3569]  INFO -- : unlinking existing socket=/var/run/unicorn/unicorn_stay_visualize.sock
+I, [2016-02-16T01:36:54.004144 #3569]  INFO -- : listening on addr=/var/run/unicorn/unicorn_stay_visualize.sock fd=11
+I, [2016-02-16T01:36:54.004263 #3569]  INFO -- : worker=0 spawning...
+I, [2016-02-16T01:36:54.005295 #3569]  INFO -- : master process ready
+I, [2016-02-16T01:36:54.011163 #3574]  INFO -- : worker=0 spawned pid=3574
+I, [2016-02-16T01:36:54.011313 #3574]  INFO -- : worker=0 ready
+I, [2016-02-17T03:55:05.284903 #3569]  INFO -- : reaped #<Process::Status: pid 3574 exit 0> worker=0
+I, [2016-02-17T03:55:05.285034 #3569]  INFO -- : master complete
+I, [2016-02-17T03:56:39.881501 #9440]  INFO -- : Refreshing Gem list
+/root/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/activesupport-4.2.4/lib/active_support/dependencies.rb:268:in `load': /home/stay_visualize/config/routes.rb:3: syntax error, unexpected '\n', expecting => (SyntaxError)
+	from /root/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/activesupport-4.2.4/lib/active_support/dependencies.rb:268:in `block in load'
+	from /root/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/activesupport-4.2.4/lib/active_support/dependencies.rb:240:in `load_dependency'
+	from /root/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/activesupport-4.2.4/lib/active_support/dependencies.rb:268:in `load'
+	from /root/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/railties-4.2.4/lib/rails/application/routes_reloader.rb:40:in `block in load_paths'
+	from /root/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/railties-4.2.4/lib/rails/application/routes_reloader.rb:40:in `each'
+	from /root/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/railties-4.2.4/lib/rails/application/routes_reloader.rb:40:in `load_paths'
+	from /root/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/railties-4.2.4/lib/rails/application/routes_reloader.rb:16:in `reload!'
+	from /root/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/railties-4.2.4/lib/rails/application/routes_reloader.rb:26:in `block in updater'
+	from /root/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/activesupport-4.2.4/lib/active_support/file_update_checker.rb:75:in `call'
+	from /root/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/activesupport-4.2.4/lib/active_support/file_update_checker.rb:75:in `execute'
+	from /root/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/railties-4.2.4/lib/rails/application/routes_reloader.rb:27:in `updater'
+	from /root/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/railties-4.2.4/lib/rails/application/routes_reloader.rb:7:in `execute_if_updated'
+	from /root/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/railties-4.2.4/lib/rails/application/finisher.rb:69:in `block in <module:Finisher>'
+	from /root/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/railties-4.2.4/lib/rails/initializable.rb:30:in `instance_exec'
+	from /root/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/railties-4.2.4/lib/rails/initializable.rb:30:in `run'
+	from /root/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/railties-4.2.4/lib/rails/initializable.rb:55:in `block in run_initializers'
+	from /root/.rbenv/versions/2.2.3/lib/ruby/2.2.0/tsort.rb:226:in `block in tsort_each'
+	from /root/.rbenv/versions/2.2.3/lib/ruby/2.2.0/tsort.rb:348:in `block (2 levels) in each_strongly_connected_component'
+	from /root/.rbenv/versions/2.2.3/lib/ruby/2.2.0/tsort.rb:429:in `each_strongly_connected_component_from'
+	from /root/.rbenv/versions/2.2.3/lib/ruby/2.2.0/tsort.rb:347:in `block in each_strongly_connected_component'
+	from /root/.rbenv/versions/2.2.3/lib/ruby/2.2.0/tsort.rb:345:in `each'
+	from /root/.rbenv/versions/2.2.3/lib/ruby/2.2.0/tsort.rb:345:in `call'
+	from /root/.rbenv/versions/2.2.3/lib/ruby/2.2.0/tsort.rb:345:in `each_strongly_connected_component'
+	from /root/.rbenv/versions/2.2.3/lib/ruby/2.2.0/tsort.rb:224:in `tsort_each'
+	from /root/.rbenv/versions/2.2.3/lib/ruby/2.2.0/tsort.rb:203:in `tsort_each'
+	from /root/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/railties-4.2.4/lib/rails/initializable.rb:54:in `run_initializers'
+	from /root/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/railties-4.2.4/lib/rails/application.rb:352:in `initialize!'
+	from /home/stay_visualize/config/environment.rb:5:in `<top (required)>'
+	from /root/.rbenv/versions/2.2.3/lib/ruby/2.2.0/rubygems/core_ext/kernel_require.rb:54:in `require'
+	from /root/.rbenv/versions/2.2.3/lib/ruby/2.2.0/rubygems/core_ext/kernel_require.rb:54:in `require'
+	from config.ru:4:in `block in <main>'
+	from /root/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/rack-1.6.4/lib/rack/builder.rb:55:in `instance_eval'
+	from /root/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/rack-1.6.4/lib/rack/builder.rb:55:in `initialize'
+	from config.ru:1:in `new'
+	from config.ru:1:in `<main>'
+	from /root/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/unicorn-5.0.1/lib/unicorn.rb:46:in `eval'
+	from /root/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/unicorn-5.0.1/lib/unicorn.rb:46:in `block in builder'
+	from /root/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/unicorn-5.0.1/bin/unicorn_rails:139:in `call'
+	from /root/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/unicorn-5.0.1/bin/unicorn_rails:139:in `block in rails_builder'
+	from /root/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/unicorn-5.0.1/lib/unicorn/http_server.rb:752:in `call'
+	from /root/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/unicorn-5.0.1/lib/unicorn/http_server.rb:752:in `build_app!'
+	from /root/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/unicorn-5.0.1/lib/unicorn/http_server.rb:129:in `start'
+	from /root/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/unicorn-5.0.1/bin/unicorn_rails:209:in `<top (required)>'
+	from /root/.rbenv/versions/2.2.3/bin/unicorn_rails:23:in `load'
+	from /root/.rbenv/versions/2.2.3/bin/unicorn_rails:23:in `<main>'
+I, [2016-02-17T03:59:55.186579 #9513]  INFO -- : Refreshing Gem list
+/root/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/activesupport-4.2.4/lib/active_support/dependencies.rb:268:in `load': /home/stay_visualize/config/routes.rb:3: syntax error, unexpected '\n', expecting => (SyntaxError)
+	from /root/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/activesupport-4.2.4/lib/active_support/dependencies.rb:268:in `block in load'
+	from /root/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/activesupport-4.2.4/lib/active_support/dependencies.rb:240:in `load_dependency'
+	from /root/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/activesupport-4.2.4/lib/active_support/dependencies.rb:268:in `load'
+	from /root/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/railties-4.2.4/lib/rails/application/routes_reloader.rb:40:in `block in load_paths'
+	from /root/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/railties-4.2.4/lib/rails/application/routes_reloader.rb:40:in `each'
+	from /root/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/railties-4.2.4/lib/rails/application/routes_reloader.rb:40:in `load_paths'
+	from /root/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/railties-4.2.4/lib/rails/application/routes_reloader.rb:16:in `reload!'
+	from /root/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/railties-4.2.4/lib/rails/application/routes_reloader.rb:26:in `block in updater'
+	from /root/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/activesupport-4.2.4/lib/active_support/file_update_checker.rb:75:in `call'
+	from /root/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/activesupport-4.2.4/lib/active_support/file_update_checker.rb:75:in `execute'
+	from /root/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/railties-4.2.4/lib/rails/application/routes_reloader.rb:27:in `updater'
+	from /root/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/railties-4.2.4/lib/rails/application/routes_reloader.rb:7:in `execute_if_updated'
+	from /root/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/railties-4.2.4/lib/rails/application/finisher.rb:69:in `block in <module:Finisher>'
+	from /root/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/railties-4.2.4/lib/rails/initializable.rb:30:in `instance_exec'
+	from /root/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/railties-4.2.4/lib/rails/initializable.rb:30:in `run'
+	from /root/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/railties-4.2.4/lib/rails/initializable.rb:55:in `block in run_initializers'
+	from /root/.rbenv/versions/2.2.3/lib/ruby/2.2.0/tsort.rb:226:in `block in tsort_each'
+	from /root/.rbenv/versions/2.2.3/lib/ruby/2.2.0/tsort.rb:348:in `block (2 levels) in each_strongly_connected_component'
+	from /root/.rbenv/versions/2.2.3/lib/ruby/2.2.0/tsort.rb:429:in `each_strongly_connected_component_from'
+	from /root/.rbenv/versions/2.2.3/lib/ruby/2.2.0/tsort.rb:347:in `block in each_strongly_connected_component'
+	from /root/.rbenv/versions/2.2.3/lib/ruby/2.2.0/tsort.rb:345:in `each'
+	from /root/.rbenv/versions/2.2.3/lib/ruby/2.2.0/tsort.rb:345:in `call'
+	from /root/.rbenv/versions/2.2.3/lib/ruby/2.2.0/tsort.rb:345:in `each_strongly_connected_component'
+	from /root/.rbenv/versions/2.2.3/lib/ruby/2.2.0/tsort.rb:224:in `tsort_each'
+	from /root/.rbenv/versions/2.2.3/lib/ruby/2.2.0/tsort.rb:203:in `tsort_each'
+	from /root/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/railties-4.2.4/lib/rails/initializable.rb:54:in `run_initializers'
+	from /root/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/railties-4.2.4/lib/rails/application.rb:352:in `initialize!'
+	from /home/stay_visualize/config/environment.rb:5:in `<top (required)>'
+	from /root/.rbenv/versions/2.2.3/lib/ruby/2.2.0/rubygems/core_ext/kernel_require.rb:54:in `require'
+	from /root/.rbenv/versions/2.2.3/lib/ruby/2.2.0/rubygems/core_ext/kernel_require.rb:54:in `require'
+	from config.ru:4:in `block in <main>'
+	from /root/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/rack-1.6.4/lib/rack/builder.rb:55:in `instance_eval'
+	from /root/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/rack-1.6.4/lib/rack/builder.rb:55:in `initialize'
+	from config.ru:1:in `new'
+	from config.ru:1:in `<main>'
+	from /root/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/unicorn-5.0.1/lib/unicorn.rb:46:in `eval'
+	from /root/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/unicorn-5.0.1/lib/unicorn.rb:46:in `block in builder'
+	from /root/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/unicorn-5.0.1/bin/unicorn_rails:139:in `call'
+	from /root/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/unicorn-5.0.1/bin/unicorn_rails:139:in `block in rails_builder'
+	from /root/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/unicorn-5.0.1/lib/unicorn/http_server.rb:752:in `call'
+	from /root/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/unicorn-5.0.1/lib/unicorn/http_server.rb:752:in `build_app!'
+	from /root/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/unicorn-5.0.1/lib/unicorn/http_server.rb:129:in `start'
+	from /root/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/unicorn-5.0.1/bin/unicorn_rails:209:in `<top (required)>'
+	from /root/.rbenv/versions/2.2.3/bin/unicorn_rails:23:in `load'
+	from /root/.rbenv/versions/2.2.3/bin/unicorn_rails:23:in `<main>'
+I, [2016-02-17T04:03:33.932628 #9665]  INFO -- : Refreshing Gem list
+/root/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/routing/mapper.rb:238:in `add_request_method': You should not use the `match` method in your router without specifying an HTTP method. (ArgumentError)
+If you want to expose your action to both GET and POST, add `via: [:get, :post]` option.
+If you want to expose your action to GET, use `get` in the router:
+  Instead of: match "controller#action"
+  Do: get "controller#action"
+	from /root/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/routing/mapper.rb:124:in `initialize'
+	from /root/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/routing/mapper.rb:78:in `new'
+	from /root/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/routing/mapper.rb:78:in `build'
+	from /root/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/routing/mapper.rb:1559:in `add_route'
+	from /root/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/routing/mapper.rb:1536:in `decomposed_match'
+	from /root/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/routing/mapper.rb:1517:in `block in match'
+	from /root/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/routing/mapper.rb:1507:in `each'
+	from /root/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/routing/mapper.rb:1507:in `match'
+	from /home/stay_visualize/config/routes.rb:3:in `block in <top (required)>'
+	from /root/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/routing/route_set.rb:434:in `instance_exec'
+	from /root/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/routing/route_set.rb:434:in `eval_block'
+	from /root/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/routing/route_set.rb:412:in `draw'
+	from /home/stay_visualize/config/routes.rb:1:in `<top (required)>'
+	from /root/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/activesupport-4.2.4/lib/active_support/dependencies.rb:268:in `load'
+	from /root/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/activesupport-4.2.4/lib/active_support/dependencies.rb:268:in `block in load'
+	from /root/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/activesupport-4.2.4/lib/active_support/dependencies.rb:240:in `load_dependency'
+	from /root/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/activesupport-4.2.4/lib/active_support/dependencies.rb:268:in `load'
+	from /root/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/railties-4.2.4/lib/rails/application/routes_reloader.rb:40:in `block in load_paths'
+	from /root/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/railties-4.2.4/lib/rails/application/routes_reloader.rb:40:in `each'
+	from /root/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/railties-4.2.4/lib/rails/application/routes_reloader.rb:40:in `load_paths'
+	from /root/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/railties-4.2.4/lib/rails/application/routes_reloader.rb:16:in `reload!'
+	from /root/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/railties-4.2.4/lib/rails/application/routes_reloader.rb:26:in `block in updater'
+	from /root/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/activesupport-4.2.4/lib/active_support/file_update_checker.rb:75:in `call'
+	from /root/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/activesupport-4.2.4/lib/active_support/file_update_checker.rb:75:in `execute'
+	from /root/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/railties-4.2.4/lib/rails/application/routes_reloader.rb:27:in `updater'
+	from /root/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/railties-4.2.4/lib/rails/application/routes_reloader.rb:7:in `execute_if_updated'
+	from /root/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/railties-4.2.4/lib/rails/application/finisher.rb:69:in `block in <module:Finisher>'
+	from /root/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/railties-4.2.4/lib/rails/initializable.rb:30:in `instance_exec'
+	from /root/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/railties-4.2.4/lib/rails/initializable.rb:30:in `run'
+	from /root/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/railties-4.2.4/lib/rails/initializable.rb:55:in `block in run_initializers'
+	from /root/.rbenv/versions/2.2.3/lib/ruby/2.2.0/tsort.rb:226:in `block in tsort_each'
+	from /root/.rbenv/versions/2.2.3/lib/ruby/2.2.0/tsort.rb:348:in `block (2 levels) in each_strongly_connected_component'
+	from /root/.rbenv/versions/2.2.3/lib/ruby/2.2.0/tsort.rb:429:in `each_strongly_connected_component_from'
+	from /root/.rbenv/versions/2.2.3/lib/ruby/2.2.0/tsort.rb:347:in `block in each_strongly_connected_component'
+	from /root/.rbenv/versions/2.2.3/lib/ruby/2.2.0/tsort.rb:345:in `each'
+	from /root/.rbenv/versions/2.2.3/lib/ruby/2.2.0/tsort.rb:345:in `call'
+	from /root/.rbenv/versions/2.2.3/lib/ruby/2.2.0/tsort.rb:345:in `each_strongly_connected_component'
+	from /root/.rbenv/versions/2.2.3/lib/ruby/2.2.0/tsort.rb:224:in `tsort_each'
+	from /root/.rbenv/versions/2.2.3/lib/ruby/2.2.0/tsort.rb:203:in `tsort_each'
+	from /root/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/railties-4.2.4/lib/rails/initializable.rb:54:in `run_initializers'
+	from /root/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/railties-4.2.4/lib/rails/application.rb:352:in `initialize!'
+	from /home/stay_visualize/config/environment.rb:5:in `<top (required)>'
+	from /root/.rbenv/versions/2.2.3/lib/ruby/2.2.0/rubygems/core_ext/kernel_require.rb:54:in `require'
+	from /root/.rbenv/versions/2.2.3/lib/ruby/2.2.0/rubygems/core_ext/kernel_require.rb:54:in `require'
+	from config.ru:4:in `block in <main>'
+	from /root/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/rack-1.6.4/lib/rack/builder.rb:55:in `instance_eval'
+	from /root/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/rack-1.6.4/lib/rack/builder.rb:55:in `initialize'
+	from config.ru:1:in `new'
+	from config.ru:1:in `<main>'
+	from /root/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/unicorn-5.0.1/lib/unicorn.rb:46:in `eval'
+	from /root/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/unicorn-5.0.1/lib/unicorn.rb:46:in `block in builder'
+	from /root/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/unicorn-5.0.1/bin/unicorn_rails:139:in `call'
+	from /root/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/unicorn-5.0.1/bin/unicorn_rails:139:in `block in rails_builder'
+	from /root/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/unicorn-5.0.1/lib/unicorn/http_server.rb:752:in `call'
+	from /root/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/unicorn-5.0.1/lib/unicorn/http_server.rb:752:in `build_app!'
+	from /root/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/unicorn-5.0.1/lib/unicorn/http_server.rb:129:in `start'
+	from /root/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/unicorn-5.0.1/bin/unicorn_rails:209:in `<top (required)>'
+	from /root/.rbenv/versions/2.2.3/bin/unicorn_rails:23:in `load'
+	from /root/.rbenv/versions/2.2.3/bin/unicorn_rails:23:in `<main>'
+I, [2016-02-17T04:08:56.508063 #9838]  INFO -- : Refreshing Gem list
+/root/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/activesupport-4.2.4/lib/active_support/dependencies.rb:268:in `load': /home/stay_visualize/config/routes.rb:3: syntax error, unexpected '\n', expecting => (SyntaxError)
+	from /root/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/activesupport-4.2.4/lib/active_support/dependencies.rb:268:in `block in load'
+	from /root/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/activesupport-4.2.4/lib/active_support/dependencies.rb:240:in `load_dependency'
+	from /root/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/activesupport-4.2.4/lib/active_support/dependencies.rb:268:in `load'
+	from /root/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/railties-4.2.4/lib/rails/application/routes_reloader.rb:40:in `block in load_paths'
+	from /root/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/railties-4.2.4/lib/rails/application/routes_reloader.rb:40:in `each'
+	from /root/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/railties-4.2.4/lib/rails/application/routes_reloader.rb:40:in `load_paths'
+	from /root/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/railties-4.2.4/lib/rails/application/routes_reloader.rb:16:in `reload!'
+	from /root/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/railties-4.2.4/lib/rails/application/routes_reloader.rb:26:in `block in updater'
+	from /root/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/activesupport-4.2.4/lib/active_support/file_update_checker.rb:75:in `call'
+	from /root/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/activesupport-4.2.4/lib/active_support/file_update_checker.rb:75:in `execute'
+	from /root/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/railties-4.2.4/lib/rails/application/routes_reloader.rb:27:in `updater'
+	from /root/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/railties-4.2.4/lib/rails/application/routes_reloader.rb:7:in `execute_if_updated'
+	from /root/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/railties-4.2.4/lib/rails/application/finisher.rb:69:in `block in <module:Finisher>'
+	from /root/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/railties-4.2.4/lib/rails/initializable.rb:30:in `instance_exec'
+	from /root/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/railties-4.2.4/lib/rails/initializable.rb:30:in `run'
+	from /root/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/railties-4.2.4/lib/rails/initializable.rb:55:in `block in run_initializers'
+	from /root/.rbenv/versions/2.2.3/lib/ruby/2.2.0/tsort.rb:226:in `block in tsort_each'
+	from /root/.rbenv/versions/2.2.3/lib/ruby/2.2.0/tsort.rb:348:in `block (2 levels) in each_strongly_connected_component'
+	from /root/.rbenv/versions/2.2.3/lib/ruby/2.2.0/tsort.rb:429:in `each_strongly_connected_component_from'
+	from /root/.rbenv/versions/2.2.3/lib/ruby/2.2.0/tsort.rb:347:in `block in each_strongly_connected_component'
+	from /root/.rbenv/versions/2.2.3/lib/ruby/2.2.0/tsort.rb:345:in `each'
+	from /root/.rbenv/versions/2.2.3/lib/ruby/2.2.0/tsort.rb:345:in `call'
+	from /root/.rbenv/versions/2.2.3/lib/ruby/2.2.0/tsort.rb:345:in `each_strongly_connected_component'
+	from /root/.rbenv/versions/2.2.3/lib/ruby/2.2.0/tsort.rb:224:in `tsort_each'
+	from /root/.rbenv/versions/2.2.3/lib/ruby/2.2.0/tsort.rb:203:in `tsort_each'
+	from /root/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/railties-4.2.4/lib/rails/initializable.rb:54:in `run_initializers'
+	from /root/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/railties-4.2.4/lib/rails/application.rb:352:in `initialize!'
+	from /home/stay_visualize/config/environment.rb:5:in `<top (required)>'
+	from /root/.rbenv/versions/2.2.3/lib/ruby/2.2.0/rubygems/core_ext/kernel_require.rb:54:in `require'
+	from /root/.rbenv/versions/2.2.3/lib/ruby/2.2.0/rubygems/core_ext/kernel_require.rb:54:in `require'
+	from config.ru:4:in `block in <main>'
+	from /root/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/rack-1.6.4/lib/rack/builder.rb:55:in `instance_eval'
+	from /root/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/rack-1.6.4/lib/rack/builder.rb:55:in `initialize'
+	from config.ru:1:in `new'
+	from config.ru:1:in `<main>'
+	from /root/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/unicorn-5.0.1/lib/unicorn.rb:46:in `eval'
+	from /root/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/unicorn-5.0.1/lib/unicorn.rb:46:in `block in builder'
+	from /root/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/unicorn-5.0.1/bin/unicorn_rails:139:in `call'
+	from /root/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/unicorn-5.0.1/bin/unicorn_rails:139:in `block in rails_builder'
+	from /root/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/unicorn-5.0.1/lib/unicorn/http_server.rb:752:in `call'
+	from /root/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/unicorn-5.0.1/lib/unicorn/http_server.rb:752:in `build_app!'
+	from /root/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/unicorn-5.0.1/lib/unicorn/http_server.rb:129:in `start'
+	from /root/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/unicorn-5.0.1/bin/unicorn_rails:209:in `<top (required)>'
+	from /root/.rbenv/versions/2.2.3/bin/unicorn_rails:23:in `load'
+	from /root/.rbenv/versions/2.2.3/bin/unicorn_rails:23:in `<main>'
+I, [2016-02-17T04:09:57.687627 #9910]  INFO -- : Refreshing Gem list
+/root/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/activesupport-4.2.4/lib/active_support/dependencies.rb:268:in `load': /home/stay_visualize/config/routes.rb:3: syntax error, unexpected '\n', expecting => (SyntaxError)
+	from /root/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/activesupport-4.2.4/lib/active_support/dependencies.rb:268:in `block in load'
+	from /root/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/activesupport-4.2.4/lib/active_support/dependencies.rb:240:in `load_dependency'
+	from /root/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/activesupport-4.2.4/lib/active_support/dependencies.rb:268:in `load'
+	from /root/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/railties-4.2.4/lib/rails/application/routes_reloader.rb:40:in `block in load_paths'
+	from /root/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/railties-4.2.4/lib/rails/application/routes_reloader.rb:40:in `each'
+	from /root/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/railties-4.2.4/lib/rails/application/routes_reloader.rb:40:in `load_paths'
+	from /root/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/railties-4.2.4/lib/rails/application/routes_reloader.rb:16:in `reload!'
+	from /root/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/railties-4.2.4/lib/rails/application/routes_reloader.rb:26:in `block in updater'
+	from /root/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/activesupport-4.2.4/lib/active_support/file_update_checker.rb:75:in `call'
+	from /root/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/activesupport-4.2.4/lib/active_support/file_update_checker.rb:75:in `execute'
+	from /root/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/railties-4.2.4/lib/rails/application/routes_reloader.rb:27:in `updater'
+	from /root/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/railties-4.2.4/lib/rails/application/routes_reloader.rb:7:in `execute_if_updated'
+	from /root/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/railties-4.2.4/lib/rails/application/finisher.rb:69:in `block in <module:Finisher>'
+	from /root/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/railties-4.2.4/lib/rails/initializable.rb:30:in `instance_exec'
+	from /root/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/railties-4.2.4/lib/rails/initializable.rb:30:in `run'
+	from /root/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/railties-4.2.4/lib/rails/initializable.rb:55:in `block in run_initializers'
+	from /root/.rbenv/versions/2.2.3/lib/ruby/2.2.0/tsort.rb:226:in `block in tsort_each'
+	from /root/.rbenv/versions/2.2.3/lib/ruby/2.2.0/tsort.rb:348:in `block (2 levels) in each_strongly_connected_component'
+	from /root/.rbenv/versions/2.2.3/lib/ruby/2.2.0/tsort.rb:429:in `each_strongly_connected_component_from'
+	from /root/.rbenv/versions/2.2.3/lib/ruby/2.2.0/tsort.rb:347:in `block in each_strongly_connected_component'
+	from /root/.rbenv/versions/2.2.3/lib/ruby/2.2.0/tsort.rb:345:in `each'
+	from /root/.rbenv/versions/2.2.3/lib/ruby/2.2.0/tsort.rb:345:in `call'
+	from /root/.rbenv/versions/2.2.3/lib/ruby/2.2.0/tsort.rb:345:in `each_strongly_connected_component'
+	from /root/.rbenv/versions/2.2.3/lib/ruby/2.2.0/tsort.rb:224:in `tsort_each'
+	from /root/.rbenv/versions/2.2.3/lib/ruby/2.2.0/tsort.rb:203:in `tsort_each'
+	from /root/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/railties-4.2.4/lib/rails/initializable.rb:54:in `run_initializers'
+	from /root/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/railties-4.2.4/lib/rails/application.rb:352:in `initialize!'
+	from /home/stay_visualize/config/environment.rb:5:in `<top (required)>'
+	from /root/.rbenv/versions/2.2.3/lib/ruby/2.2.0/rubygems/core_ext/kernel_require.rb:54:in `require'
+	from /root/.rbenv/versions/2.2.3/lib/ruby/2.2.0/rubygems/core_ext/kernel_require.rb:54:in `require'
+	from config.ru:4:in `block in <main>'
+	from /root/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/rack-1.6.4/lib/rack/builder.rb:55:in `instance_eval'
+	from /root/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/rack-1.6.4/lib/rack/builder.rb:55:in `initialize'
+	from config.ru:1:in `new'
+	from config.ru:1:in `<main>'
+	from /root/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/unicorn-5.0.1/lib/unicorn.rb:46:in `eval'
+	from /root/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/unicorn-5.0.1/lib/unicorn.rb:46:in `block in builder'
+	from /root/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/unicorn-5.0.1/bin/unicorn_rails:139:in `call'
+	from /root/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/unicorn-5.0.1/bin/unicorn_rails:139:in `block in rails_builder'
+	from /root/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/unicorn-5.0.1/lib/unicorn/http_server.rb:752:in `call'
+	from /root/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/unicorn-5.0.1/lib/unicorn/http_server.rb:752:in `build_app!'
+	from /root/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/unicorn-5.0.1/lib/unicorn/http_server.rb:129:in `start'
+	from /root/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/unicorn-5.0.1/bin/unicorn_rails:209:in `<top (required)>'
+	from /root/.rbenv/versions/2.2.3/bin/unicorn_rails:23:in `load'
+	from /root/.rbenv/versions/2.2.3/bin/unicorn_rails:23:in `<main>'
+I, [2016-02-17T04:11:53.554573 #9987]  INFO -- : Refreshing Gem list
+I, [2016-02-17T04:11:55.062760 #9987]  INFO -- : unlinking existing socket=/var/run/unicorn/unicorn_stay_visualize.sock
+I, [2016-02-17T04:11:55.063010 #9987]  INFO -- : listening on addr=/var/run/unicorn/unicorn_stay_visualize.sock fd=11
+I, [2016-02-17T04:11:55.063137 #9987]  INFO -- : worker=0 spawning...
+I, [2016-02-17T04:11:55.064279 #9987]  INFO -- : master process ready
+I, [2016-02-17T04:11:55.069966 #9992]  INFO -- : worker=0 spawned pid=9992
+I, [2016-02-17T04:11:55.070100 #9992]  INFO -- : worker=0 ready
+I, [2016-02-18T01:10:23.657146 #9987]  INFO -- : reaped #<Process::Status: pid 9992 exit 0> worker=0
+I, [2016-02-18T01:10:23.657377 #9987]  INFO -- : master complete
+I, [2016-02-18T01:10:46.389955 #14063]  INFO -- : Refreshing Gem list
+I, [2016-02-18T01:10:47.915341 #14063]  INFO -- : unlinking existing socket=/var/run/unicorn/unicorn_stay_visualize.sock
+I, [2016-02-18T01:10:47.915596 #14063]  INFO -- : listening on addr=/var/run/unicorn/unicorn_stay_visualize.sock fd=11
+I, [2016-02-18T01:10:47.915742 #14063]  INFO -- : worker=0 spawning...
+I, [2016-02-18T01:10:47.917101 #14063]  INFO -- : master process ready
+I, [2016-02-18T01:10:47.924598 #14068]  INFO -- : worker=0 spawned pid=14068
+I, [2016-02-18T01:10:47.924756 #14068]  INFO -- : worker=0 ready
+I, [2016-02-18T01:14:35.158363 #14063]  INFO -- : reaped #<Process::Status: pid 14068 exit 0> worker=0
+I, [2016-02-18T01:14:35.158744 #14063]  INFO -- : master complete
+I, [2016-02-18T01:14:46.537307 #14181]  INFO -- : Refreshing Gem list
+I, [2016-02-18T01:14:48.054936 #14181]  INFO -- : unlinking existing socket=/var/run/unicorn/unicorn_stay_visualize.sock
+I, [2016-02-18T01:14:48.055263 #14181]  INFO -- : listening on addr=/var/run/unicorn/unicorn_stay_visualize.sock fd=11
+I, [2016-02-18T01:14:48.055377 #14181]  INFO -- : worker=0 spawning...
+I, [2016-02-18T01:14:48.056716 #14181]  INFO -- : master process ready
+I, [2016-02-18T01:14:48.061442 #14186]  INFO -- : worker=0 spawned pid=14186
+I, [2016-02-18T01:14:48.061591 #14186]  INFO -- : worker=0 ready
+I, [2016-02-18T01:44:55.494472 #14181]  INFO -- : reaped #<Process::Status: pid 14186 exit 0> worker=0
+I, [2016-02-18T01:44:55.494836 #14181]  INFO -- : master complete
+I, [2016-02-18T01:45:04.753087 #14440]  INFO -- : Refreshing Gem list
+I, [2016-02-18T01:45:06.274960 #14440]  INFO -- : unlinking existing socket=/var/run/unicorn/unicorn_stay_visualize.sock
+I, [2016-02-18T01:45:06.275222 #14440]  INFO -- : listening on addr=/var/run/unicorn/unicorn_stay_visualize.sock fd=11
+I, [2016-02-18T01:45:06.275333 #14440]  INFO -- : worker=0 spawning...
+I, [2016-02-18T01:45:06.276794 #14440]  INFO -- : master process ready
+I, [2016-02-18T01:45:06.281472 #14445]  INFO -- : worker=0 spawned pid=14445
+I, [2016-02-18T01:45:06.281623 #14445]  INFO -- : worker=0 ready
+I, [2016-02-23T00:59:16.200041 #14440]  INFO -- : reaped #<Process::Status: pid 14445 exit 0> worker=0
+I, [2016-02-23T00:59:16.200670 #14440]  INFO -- : master complete
+I, [2016-02-23T01:00:11.492285 #7400]  INFO -- : Refreshing Gem list
+I, [2016-02-23T01:00:13.021431 #7400]  INFO -- : unlinking existing socket=/var/run/unicorn/unicorn_stay_visualize.sock
+I, [2016-02-23T01:00:13.023335 #7400]  INFO -- : listening on addr=/var/run/unicorn/unicorn_stay_visualize.sock fd=11
+I, [2016-02-23T01:00:13.023464 #7400]  INFO -- : worker=0 spawning...
+I, [2016-02-23T01:00:13.024842 #7400]  INFO -- : master process ready
+I, [2016-02-23T01:00:13.033816 #7405]  INFO -- : worker=0 spawned pid=7405
+I, [2016-02-23T01:00:13.033957 #7405]  INFO -- : worker=0 ready
+I, [2016-02-23T01:04:30.969445 #7400]  INFO -- : reaped #<Process::Status: pid 7405 exit 0> worker=0
+I, [2016-02-23T01:04:30.969750 #7400]  INFO -- : master complete
+I, [2016-02-23T01:04:40.385395 #7505]  INFO -- : Refreshing Gem list
+I, [2016-02-23T01:04:41.890629 #7505]  INFO -- : unlinking existing socket=/var/run/unicorn/unicorn_stay_visualize.sock
+I, [2016-02-23T01:04:41.890923 #7505]  INFO -- : listening on addr=/var/run/unicorn/unicorn_stay_visualize.sock fd=11
+I, [2016-02-23T01:04:41.891049 #7505]  INFO -- : worker=0 spawning...
+I, [2016-02-23T01:04:41.892396 #7505]  INFO -- : master process ready
+I, [2016-02-23T01:04:41.898071 #7510]  INFO -- : worker=0 spawned pid=7510
+I, [2016-02-23T01:04:41.898217 #7510]  INFO -- : worker=0 ready
+I, [2016-02-23T01:07:57.453454 #7505]  INFO -- : reaped #<Process::Status: pid 7510 exit 0> worker=0
+I, [2016-02-23T01:07:57.453782 #7505]  INFO -- : master complete
+I, [2016-02-23T01:08:11.812635 #7618]  INFO -- : Refreshing Gem list
+I, [2016-02-23T01:08:13.352232 #7618]  INFO -- : unlinking existing socket=/var/run/unicorn/unicorn_stay_visualize.sock
+I, [2016-02-23T01:08:13.352504 #7618]  INFO -- : listening on addr=/var/run/unicorn/unicorn_stay_visualize.sock fd=11
+I, [2016-02-23T01:08:13.352750 #7618]  INFO -- : worker=0 spawning...
+I, [2016-02-23T01:08:13.354117 #7618]  INFO -- : master process ready
+I, [2016-02-23T01:08:13.359812 #7623]  INFO -- : worker=0 spawned pid=7623
+I, [2016-02-23T01:08:13.359960 #7623]  INFO -- : worker=0 ready
+I, [2016-02-23T01:17:28.165018 #7618]  INFO -- : reaped #<Process::Status: pid 7623 exit 0> worker=0
+I, [2016-02-23T01:17:28.165320 #7618]  INFO -- : master complete
+I, [2016-02-23T01:17:32.323487 #7719]  INFO -- : Refreshing Gem list
+I, [2016-02-23T01:17:33.865229 #7719]  INFO -- : unlinking existing socket=/var/run/unicorn/unicorn_stay_visualize.sock
+I, [2016-02-23T01:17:33.865486 #7719]  INFO -- : listening on addr=/var/run/unicorn/unicorn_stay_visualize.sock fd=11
+I, [2016-02-23T01:17:33.865664 #7719]  INFO -- : worker=0 spawning...
+I, [2016-02-23T01:17:33.866991 #7719]  INFO -- : master process ready
+I, [2016-02-23T01:17:33.872970 #7724]  INFO -- : worker=0 spawned pid=7724
+I, [2016-02-23T01:17:33.873121 #7724]  INFO -- : worker=0 ready
+I, [2016-02-23T01:23:39.085536 #7719]  INFO -- : reaped #<Process::Status: pid 7724 exit 0> worker=0
+I, [2016-02-23T01:23:39.085854 #7719]  INFO -- : master complete
+I, [2016-02-23T01:23:48.283516 #7886]  INFO -- : Refreshing Gem list
+I, [2016-02-23T01:23:49.815510 #7886]  INFO -- : unlinking existing socket=/var/run/unicorn/unicorn_stay_visualize.sock
+I, [2016-02-23T01:23:49.815816 #7886]  INFO -- : listening on addr=/var/run/unicorn/unicorn_stay_visualize.sock fd=11
+I, [2016-02-23T01:23:49.815940 #7886]  INFO -- : worker=0 spawning...
+I, [2016-02-23T01:23:49.817267 #7886]  INFO -- : master process ready
+I, [2016-02-23T01:23:49.822909 #7891]  INFO -- : worker=0 spawned pid=7891
+I, [2016-02-23T01:23:49.823060 #7891]  INFO -- : worker=0 ready
+I, [2016-02-23T01:29:32.543528 #7886]  INFO -- : reaped #<Process::Status: pid 7891 exit 0> worker=0
+I, [2016-02-23T01:29:32.543844 #7886]  INFO -- : master complete
+I, [2016-02-23T01:29:35.042003 #8010]  INFO -- : Refreshing Gem list
+I, [2016-02-23T01:29:36.579650 #8010]  INFO -- : unlinking existing socket=/var/run/unicorn/unicorn_stay_visualize.sock
+I, [2016-02-23T01:29:36.579925 #8010]  INFO -- : listening on addr=/var/run/unicorn/unicorn_stay_visualize.sock fd=11
+I, [2016-02-23T01:29:36.580049 #8010]  INFO -- : worker=0 spawning...
+I, [2016-02-23T01:29:36.581418 #8010]  INFO -- : master process ready
+I, [2016-02-23T01:29:36.587431 #8015]  INFO -- : worker=0 spawned pid=8015
+I, [2016-02-23T01:29:36.587588 #8015]  INFO -- : worker=0 ready
+I, [2016-02-23T01:38:50.448564 #8010]  INFO -- : reaped #<Process::Status: pid 8015 exit 0> worker=0
+I, [2016-02-23T01:38:50.448869 #8010]  INFO -- : master complete
+I, [2016-02-23T01:38:53.346481 #8351]  INFO -- : Refreshing Gem list
+I, [2016-02-23T01:38:54.891064 #8351]  INFO -- : unlinking existing socket=/var/run/unicorn/unicorn_stay_visualize.sock
+I, [2016-02-23T01:38:54.891319 #8351]  INFO -- : listening on addr=/var/run/unicorn/unicorn_stay_visualize.sock fd=11
+I, [2016-02-23T01:38:54.891460 #8351]  INFO -- : worker=0 spawning...
+I, [2016-02-23T01:38:54.892955 #8351]  INFO -- : master process ready
+I, [2016-02-23T01:38:54.898917 #8356]  INFO -- : worker=0 spawned pid=8356
+I, [2016-02-23T01:38:54.899070 #8356]  INFO -- : worker=0 ready
+I, [2016-02-23T01:42:34.278563 #8351]  INFO -- : reaped #<Process::Status: pid 8356 exit 0> worker=0
+I, [2016-02-23T01:42:34.278865 #8351]  INFO -- : master complete
+I, [2016-02-23T01:42:37.115412 #8449]  INFO -- : Refreshing Gem list
+I, [2016-02-23T01:42:38.649926 #8449]  INFO -- : unlinking existing socket=/var/run/unicorn/unicorn_stay_visualize.sock
+I, [2016-02-23T01:42:38.650195 #8449]  INFO -- : listening on addr=/var/run/unicorn/unicorn_stay_visualize.sock fd=11
+I, [2016-02-23T01:42:38.650307 #8449]  INFO -- : worker=0 spawning...
+I, [2016-02-23T01:42:38.651716 #8449]  INFO -- : master process ready
+I, [2016-02-23T01:42:38.656397 #8454]  INFO -- : worker=0 spawned pid=8454
+I, [2016-02-23T01:42:38.656549 #8454]  INFO -- : worker=0 ready
+I, [2016-03-07T00:23:07.332150 #8449]  INFO -- : reaped #<Process::Status: pid 8454 exit 0> worker=0
+I, [2016-03-07T00:23:07.332384 #8449]  INFO -- : master complete
+I, [2016-03-07T00:23:14.847248 #5887]  INFO -- : Refreshing Gem list
+I, [2016-03-07T00:23:16.433649 #5887]  INFO -- : unlinking existing socket=/var/run/unicorn/unicorn_stay_visualize.sock
+I, [2016-03-07T00:23:16.433932 #5887]  INFO -- : listening on addr=/var/run/unicorn/unicorn_stay_visualize.sock fd=11
+I, [2016-03-07T00:23:16.434050 #5887]  INFO -- : worker=0 spawning...
+I, [2016-03-07T00:23:16.435686 #5887]  INFO -- : master process ready
+I, [2016-03-07T00:23:16.440754 #5892]  INFO -- : worker=0 spawned pid=5892
+I, [2016-03-07T00:23:16.440913 #5892]  INFO -- : worker=0 ready

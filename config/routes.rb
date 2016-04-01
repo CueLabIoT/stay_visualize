@@ -1,7 +1,9 @@
 Rails.application.routes.draw do
-  get 'motions/index'
+  get 'toirets/index'
 
-  # The priority is based upon order of creation: first created -> highest priority.
+  get 'motions/index'
+ match '/server_post', :to => 'server_request#server_post', :via => 'post'
+# The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
   # You can have the root of your site routed with "root"

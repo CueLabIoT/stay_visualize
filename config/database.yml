@@ -14,8 +14,8 @@ default: &default
   encoding: utf8
   pool: 5
   username: root
-  password: Itpro
-  socket: /var/run/mysqld/mysqld.sock
+  password: Itpro1
+  socket: /var/lib/mysql/mysql.sock
 
 development:
   <<: *default
@@ -50,5 +50,5 @@ test:
 production:
   <<: *default
   database: stay_visualize_production
-  username: stay_visualize
-  password: <%= ENV['STAY_VISUALIZE_DATABASE_PASSWORD'] %>
+  username: root
+  password: Itpro1
