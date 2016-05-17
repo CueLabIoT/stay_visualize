@@ -1,0 +1,22 @@
+<head>
+</head>
+<!-- 1.ナビゲーションバーの設定 -->
+<div class="navbar navbar-inverse"> 
+        <!-- 2.ヘッダ情報 -->
+        <div class="navbar-header">
+            <a class="navbar-brand">HEAVEN'S DOOR</a>
+	</div>
+</div>
+<!-- 上部の説明文-->
+<font style="font-size:12em"> 
+<% @check_toiret.each do |ctoiret| %>
+<%= ctoiret.datetime %> <br/>
+<%= ctoiret.toiret_floor %>
+<% if ctoiret.flag == true then %>
+ <span class="label label-danger">Closed</span>
+<% else %>
+ <span class="label label-success">Open</span>
+<% end %>
+<% end %>
+</font>
+

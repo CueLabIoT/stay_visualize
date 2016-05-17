@@ -1,5 +1,7 @@
 Rails.application.routes.draw do
   get 'toirets/index'
+  get 'toirets/situation'
+
 
   get 'motions/index'
  match '/server_post', :to => 'server_request#server_post', :via => 'post'
