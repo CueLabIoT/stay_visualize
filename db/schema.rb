@@ -24,9 +24,9 @@ ActiveRecord::Schema.define(version: 20160222071148) do
   create_table "toirets", force: :cascade do |t|
     t.datetime "datetime"
     t.boolean  "flag"
+    t.float    "distance"
     t.string   "toiret_floor"
     t.string   "toiret_num"
-    t.float    "used_time"
     t.datetime "created_at",   null: false
     t.datetime "updated_at",   null: false
   end

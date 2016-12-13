@@ -9883,3 +9883,82 @@ Started GET "/assets/toirets.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde
 
 
 Started GET "/assets/application.self-f8806224e027f3e3f0138ea9ce99319e298dfdb323304d1f1be6eae8e8c74724.js?body=1" for ::1 at 2016-11-22 18:12:35 +0900
+  [1m[36m (1.7ms)[0m  [1mCREATE TABLE "motions" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "hostid" varchar, "flag" boolean, "switchtime" datetime, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) [0m
+  [1m[35m (1.5ms)[0m  CREATE TABLE "toirets" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "datetime" datetime, "flag" boolean, "toiret_floor" varchar, "toiret_num" varchar, "used_time" float, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36m (2.0ms)[0m  [1mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL) [0m
+  [1m[35m (0.1ms)[0m  select sqlite_version(*)
+  [1m[36m (1.6ms)[0m  [1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [1m[35m (0.2ms)[0m  SELECT version FROM "schema_migrations"
+  [1m[36m (1.8ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('20160222071148')[0m
+  [1m[35m (1.4ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20151021073151')
+  [1m[36m (1.5ms)[0m  [1mCREATE TABLE "motions" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "hostid" varchar, "flag" boolean, "switchtime" datetime, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) [0m
+  [1m[35m (1.6ms)[0m  CREATE TABLE "toirets" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "datetime" datetime, "flag" boolean, "toiret_floor" varchar, "toiret_num" varchar, "used_time" float, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36m (1.6ms)[0m  [1mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL) [0m
+  [1m[35m (0.1ms)[0m  select sqlite_version(*)
+  [1m[36m (1.6ms)[0m  [1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [1m[35m (0.3ms)[0m  SELECT version FROM "schema_migrations"
+  [1m[36m (1.7ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('20160222071148')[0m
+  [1m[35m (1.6ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20151021073151')
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.8ms)[0m  [1mINSERT INTO "motions" ("hostid", "flag", "switchtime", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["hostid", "pi1"], ["flag", "t"], ["switchtime", "2015-09-09 16:40:02.000000"], ["created_at", "2016-12-13 08:04:52.839190"], ["updated_at", "2016-12-13 08:04:52.839190"]]
+  [1m[35m (1.5ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "motions" ("hostid", "flag", "switchtime", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["hostid", "pi1"], ["flag", "f"], ["switchtime", "2015-09-09 16:40:32.000000"], ["created_at", "2016-12-13 08:04:52.857742"], ["updated_at", "2016-12-13 08:04:52.857742"]]
+  [1m[36m (2.0ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "motions" ("hostid", "flag", "switchtime", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["hostid", "pi1"], ["flag", "t"], ["switchtime", "2015-09-09 16:53:12.000000"], ["created_at", "2016-12-13 08:04:52.862414"], ["updated_at", "2016-12-13 08:04:52.862414"]]
+  [1m[35m (1.6ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "motions" ("hostid", "flag", "switchtime", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["hostid", "pi1"], ["flag", "f"], ["switchtime", "2015-09-09 16:53:42.000000"], ["created_at", "2016-12-13 08:04:52.866697"], ["updated_at", "2016-12-13 08:04:52.866697"]]
+  [1m[36m (1.5ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "motions" ("hostid", "flag", "switchtime", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["hostid", "pi1"], ["flag", "t"], ["switchtime", "2015-09-09 17:01:01.000000"], ["created_at", "2016-12-13 08:04:52.870476"], ["updated_at", "2016-12-13 08:04:52.870476"]]
+  [1m[35m (1.8ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "motions" ("hostid", "flag", "switchtime", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["hostid", "pi1"], ["flag", "f"], ["switchtime", "2015-09-09 17:01:31.000000"], ["created_at", "2016-12-13 08:04:52.874089"], ["updated_at", "2016-12-13 08:04:52.874089"]]
+  [1m[36m (1.4ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "motions" ("hostid", "flag", "switchtime", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["hostid", "pi1"], ["flag", "t"], ["switchtime", "2015-09-09 17:03:41.000000"], ["created_at", "2016-12-13 08:04:52.877739"], ["updated_at", "2016-12-13 08:04:52.877739"]]
+  [1m[35m (1.4ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "motions" ("hostid", "flag", "switchtime", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["hostid", "pi1"], ["flag", "f"], ["switchtime", "2015-09-09 17:04:11.000000"], ["created_at", "2016-12-13 08:04:52.881320"], ["updated_at", "2016-12-13 08:04:52.881320"]]
+  [1m[36m (1.4ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "motions" ("hostid", "flag", "switchtime", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["hostid", "pi1"], ["flag", "t"], ["switchtime", "2015-09-09 17:09:02.000000"], ["created_at", "2016-12-13 08:04:52.884959"], ["updated_at", "2016-12-13 08:04:52.884959"]]
+  [1m[35m (1.9ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "motions" ("hostid", "flag", "switchtime", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["hostid", "pi1"], ["flag", "f"], ["switchtime", "2015-09-09 17:09:32.000000"], ["created_at", "2016-12-13 08:04:52.889016"], ["updated_at", "2016-12-13 08:04:52.889016"]]
+  [1m[36m (1.4ms)[0m  [1mcommit transaction[0m
+  [1m[36m (1.8ms)[0m  [1mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL) [0m
+  [1m[35m (0.1ms)[0m  select sqlite_version(*)
+  [1m[36m (1.5ms)[0m  [1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+Migrating to CreateMotions (20151021073151)
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.5ms)[0m  CREATE TABLE "motions" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "hostid" varchar, "flag" boolean, "switchtime" datetime, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20151021073151"]]
+  [1m[35m (2.8ms)[0m  commit transaction
+Migrating to CreateToirets (20160222071148)
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.6ms)[0m  CREATE TABLE "toirets" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "datetime" datetime, "flag" boolean, "distance" float, "toiret_floor" varchar, "toiret_num" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20160222071148"]]
+  [1m[35m (2.2ms)[0m  commit transaction
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+
+
+Started GET "/" for ::1 at 2016-12-13 17:06:11 +0900
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by Rails::WelcomeController#index as HTML
+  Rendered /Users/systems/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/railties-4.2.4/lib/rails/templates/rails/welcome/index.html.erb (3.6ms)
+Completed 200 OK in 42ms (Views: 26.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/toirets/index" for ::1 at 2016-12-13 17:06:18 +0900
+Processing by ToiretsController#index as HTML
+  [1m[35m (0.2ms)[0m  SELECT MAX("toirets"."distance") FROM "toirets"
+  [1m[36m (0.2ms)[0m  [1mSELECT MAX("toirets"."datetime") FROM "toirets" WHERE (toiret_floor = '15F')[0m
+  [1m[35m (0.2ms)[0m  SELECT MAX("toirets"."datetime") FROM "toirets" WHERE (toiret_floor = '10F')
+  [1m[36mToiret Load (0.2ms)[0m  [1mSELECT "toirets".* FROM "toirets"[0m
+  Rendered toirets/index.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 806ms (Views: 780.0ms | ActiveRecord: 1.1ms)
