@@ -3,7 +3,6 @@ ruby '2.2.3'
 gem 'therubyracer'
 gem 'less-rails'
 gem 'twitter-bootstrap-rails'
-gem 'sqlite3'
 
 gem 'mysql2', '~> 0.3.13'
 gem 'execjs'
