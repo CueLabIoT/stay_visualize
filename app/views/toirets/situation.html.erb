@@ -14,12 +14,11 @@
 		<!-- 上部の説明文-->
 		<% @check_toiret.each do |ctoiret| %>
 		<%= ctoiret.datetime %> <br/>
-		<%= ctoiret.toiret_floor %>
+		<%= ctoiret.toiret_floor %> <br/>
 		<% if ctoiret.flag == true then %>
-		 <%= image_tag 'opend.png' %>
+		 <%= image_tag("closed.png", :size => "128x128") %>
 		<% else %>
-    <%= image_tag 'closed.png' %>
-     <span class="label label-success">Open</span>
+    <%= image_tag("opend.png", :size => "128x128") %>
 		<% end %>
 		<% end %>
 	</div>

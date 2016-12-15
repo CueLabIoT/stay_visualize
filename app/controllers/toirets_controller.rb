@@ -13,7 +13,7 @@ class ToiretsController < ApplicationController
    @tenF = Toiret.where("toiret_floor = ?","10F").maximum(:datetime)
    @F60 = Toiret.where("toiret_floor = ?","6F").maximum(:datetime)
 
-   @check_toiret = Toiret.where(toiret_floor: '15F',datetime: @F60)
+   @check_toiret = Toiret.where(toiret_floor: '6F',datetime: @F60)
   end
 
 end
