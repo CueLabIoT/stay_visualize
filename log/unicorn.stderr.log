@@ -412,3 +412,10 @@ I, [2016-03-07T00:23:16.434050 #5887]  INFO -- : worker=0 spawning...
 I, [2016-03-07T00:23:16.435686 #5887]  INFO -- : master process ready
 I, [2016-03-07T00:23:16.440754 #5892]  INFO -- : worker=0 spawned pid=5892
 I, [2016-03-07T00:23:16.440913 #5892]  INFO -- : worker=0 ready
+I, [2016-12-13T03:27:25.710364 #25564]  INFO -- : Refreshing Gem list
+I, [2016-12-13T03:27:27.020122 #25564]  INFO -- : unlinking existing socket=/var/run/unicorn/unicorn_stay_visualize.sock
+I, [2016-12-13T03:27:27.020277 #25564]  INFO -- : listening on addr=/var/run/unicorn/unicorn_stay_visualize.sock fd=11
+I, [2016-12-13T03:27:27.020379 #25564]  INFO -- : worker=0 spawning...
+I, [2016-12-13T03:27:27.021539 #25564]  INFO -- : master process ready
+I, [2016-12-13T03:27:27.027019 #25569]  INFO -- : worker=0 spawned pid=25569
+I, [2016-12-13T03:27:27.027172 #25569]  INFO -- : worker=0 ready

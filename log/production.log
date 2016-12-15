@@ -1169,3 +1169,95 @@ ActionController::RoutingError (No route matches [POST] "/server_post"):
   /root/.rbenv/versions/2.2.3/bin/unicorn_rails:23:in `<main>'
 
 
+D, [2016-12-13T03:27:17.270144 #25498] DEBUG -- :   [1m[36m (6.9ms)[0m  [1mCREATE TABLE `schema_migrations` (`version` varchar(255) NOT NULL) ENGINE=InnoDB[0m
+D, [2016-12-13T03:27:17.281906 #25498] DEBUG -- :   [1m[35m (11.0ms)[0m  CREATE UNIQUE INDEX `unique_schema_migrations`  ON `schema_migrations` (`version`) 
+D, [2016-12-13T03:27:17.282926 #25498] DEBUG -- :   [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+I, [2016-12-13T03:27:17.285472 #25498]  INFO -- : Migrating to CreateMotions (20151021073151)
+D, [2016-12-13T03:27:17.292173 #25498] DEBUG -- :   [1m[35m (5.5ms)[0m  CREATE TABLE `motions` (`id` int(11) auto_increment PRIMARY KEY, `hostid` varchar(255), `flag` tinyint(1), `switchtime` datetime, `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB
+D, [2016-12-13T03:27:17.300919 #25498] DEBUG -- :   [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+D, [2016-12-13T03:27:17.303255 #25498] DEBUG -- :   [1m[35mSQL (0.1ms)[0m  INSERT INTO `schema_migrations` (`version`) VALUES ('20151021073151')
+D, [2016-12-13T03:27:17.305352 #25498] DEBUG -- :   [1m[36m (1.9ms)[0m  [1mCOMMIT[0m
+I, [2016-12-13T03:27:17.305417 #25498]  INFO -- : Migrating to CreateToirets (20160222071148)
+D, [2016-12-13T03:27:17.310966 #25498] DEBUG -- :   [1m[35m (4.8ms)[0m  CREATE TABLE `toirets` (`id` int(11) auto_increment PRIMARY KEY, `datetime` datetime, `flag` tinyint(1), `distance` float, `toiret_floor` varchar(255), `toiret_num` varchar(255), `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB
+D, [2016-12-13T03:27:17.311351 #25498] DEBUG -- :   [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+D, [2016-12-13T03:27:17.311789 #25498] DEBUG -- :   [1m[35mSQL (0.1ms)[0m  INSERT INTO `schema_migrations` (`version`) VALUES ('20160222071148')
+D, [2016-12-13T03:27:17.313791 #25498] DEBUG -- :   [1m[36m (1.8ms)[0m  [1mCOMMIT[0m
+D, [2016-12-13T03:52:57.256446 #25871] DEBUG -- :   [1m[36m (6.9ms)[0m  [1mCREATE TABLE `schema_migrations` (`version` varchar(255) NOT NULL) ENGINE=InnoDB[0m
+D, [2016-12-13T03:52:57.269162 #25871] DEBUG -- :   [1m[35m (12.0ms)[0m  CREATE UNIQUE INDEX `unique_schema_migrations`  ON `schema_migrations` (`version`) 
+D, [2016-12-13T03:52:57.270172 #25871] DEBUG -- :   [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+I, [2016-12-13T03:52:57.272657 #25871]  INFO -- : Migrating to CreateMotions (20151021073151)
+D, [2016-12-13T03:52:57.279222 #25871] DEBUG -- :   [1m[35m (5.4ms)[0m  CREATE TABLE `motions` (`id` int(11) auto_increment PRIMARY KEY, `hostid` varchar(255), `flag` tinyint(1), `switchtime` datetime, `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB
+D, [2016-12-13T03:52:57.281792 #25871] DEBUG -- :   [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+D, [2016-12-13T03:52:57.284560 #25871] DEBUG -- :   [1m[35mSQL (0.1ms)[0m  INSERT INTO `schema_migrations` (`version`) VALUES ('20151021073151')
+D, [2016-12-13T03:52:57.286780 #25871] DEBUG -- :   [1m[36m (2.0ms)[0m  [1mCOMMIT[0m
+I, [2016-12-13T03:52:57.286857 #25871]  INFO -- : Migrating to CreateToirets (20160222071148)
+D, [2016-12-13T03:52:57.293318 #25871] DEBUG -- :   [1m[35m (5.7ms)[0m  CREATE TABLE `toirets` (`id` int(11) auto_increment PRIMARY KEY, `datetime` datetime, `flag` tinyint(1), `distance` float, `toiret_floor` varchar(255), `toiret_num` varchar(255), `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB
+D, [2016-12-13T03:52:57.293738 #25871] DEBUG -- :   [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+D, [2016-12-13T03:52:57.294371 #25871] DEBUG -- :   [1m[35mSQL (0.1ms)[0m  INSERT INTO `schema_migrations` (`version`) VALUES ('20160222071148')
+D, [2016-12-13T03:52:57.296415 #25871] DEBUG -- :   [1m[36m (1.9ms)[0m  [1mCOMMIT[0m
+D, [2016-12-13T03:55:36.580563 #26107] DEBUG -- :   [1m[36m (7.1ms)[0m  [1mCREATE TABLE `schema_migrations` (`version` varchar(255) NOT NULL) ENGINE=InnoDB[0m
+D, [2016-12-13T03:55:36.592582 #26107] DEBUG -- :   [1m[35m (11.2ms)[0m  CREATE UNIQUE INDEX `unique_schema_migrations`  ON `schema_migrations` (`version`) 
+D, [2016-12-13T03:55:36.593614 #26107] DEBUG -- :   [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+I, [2016-12-13T03:55:36.596150 #26107]  INFO -- : Migrating to CreateMotions (20151021073151)
+D, [2016-12-13T03:55:36.603228 #26107] DEBUG -- :   [1m[35m (5.9ms)[0m  CREATE TABLE `motions` (`id` int(11) auto_increment PRIMARY KEY, `hostid` varchar(255), `flag` tinyint(1), `switchtime` datetime, `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB
+D, [2016-12-13T03:55:36.611948 #26107] DEBUG -- :   [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+D, [2016-12-13T03:55:36.614304 #26107] DEBUG -- :   [1m[35mSQL (0.1ms)[0m  INSERT INTO `schema_migrations` (`version`) VALUES ('20151021073151')
+D, [2016-12-13T03:55:36.616353 #26107] DEBUG -- :   [1m[36m (1.8ms)[0m  [1mCOMMIT[0m
+I, [2016-12-13T03:55:36.616416 #26107]  INFO -- : Migrating to CreateToirets (20160222071148)
+D, [2016-12-13T03:55:36.621837 #26107] DEBUG -- :   [1m[35m (4.7ms)[0m  CREATE TABLE `toirets` (`id` int(11) auto_increment PRIMARY KEY, `datetime` datetime, `flag` tinyint(1), `used_time` float, `toiret_floor` varchar(255), `toiret_num` varchar(255), `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB
+D, [2016-12-13T03:55:36.622275 #26107] DEBUG -- :   [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+D, [2016-12-13T03:55:36.622743 #26107] DEBUG -- :   [1m[35mSQL (0.1ms)[0m  INSERT INTO `schema_migrations` (`version`) VALUES ('20160222071148')
+D, [2016-12-13T03:55:36.625010 #26107] DEBUG -- :   [1m[36m (2.1ms)[0m  [1mCOMMIT[0m
+D, [2016-12-13T04:01:02.693180 #26366] DEBUG -- :   [1m[36m (9.7ms)[0m  [1mDROP DATABASE IF EXISTS `stay_visualize_production`[0m
+D, [2016-12-13T04:01:02.694636 #26366] DEBUG -- :   [1m[35m (0.1ms)[0m  CREATE DATABASE `stay_visualize_production` DEFAULT CHARACTER SET `utf8` COLLATE `utf8_unicode_ci`
+D, [2016-12-13T04:01:02.705132 #26366] DEBUG -- :   [1m[36m (7.0ms)[0m  [1mCREATE TABLE `motions` (`id` int(11) auto_increment PRIMARY KEY, `hostid` varchar(255), `flag` tinyint(1), `switchtime` datetime, `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB[0m
+D, [2016-12-13T04:01:02.711545 #26366] DEBUG -- :   [1m[35m (5.4ms)[0m  CREATE TABLE `toirets` (`id` int(11) auto_increment PRIMARY KEY, `datetime` datetime, `flag` tinyint(1), `used_time` float(24), `toiret_floor` varchar(255), `toiret_num` varchar(255), `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB
+D, [2016-12-13T04:01:02.735970 #26366] DEBUG -- :   [1m[36m (5.1ms)[0m  [1mCREATE TABLE `schema_migrations` (`version` varchar(255) NOT NULL) ENGINE=InnoDB[0m
+D, [2016-12-13T04:01:02.754949 #26366] DEBUG -- :   [1m[35m (18.3ms)[0m  CREATE UNIQUE INDEX `unique_schema_migrations`  ON `schema_migrations` (`version`) 
+D, [2016-12-13T04:01:02.755376 #26366] DEBUG -- :   [1m[36m (0.2ms)[0m  [1mSELECT version FROM `schema_migrations`[0m
+D, [2016-12-13T04:01:02.757405 #26366] DEBUG -- :   [1m[35m (1.9ms)[0m  INSERT INTO `schema_migrations` (version) VALUES ('20160222071148')
+D, [2016-12-13T04:01:02.759459 #26366] DEBUG -- :   [1m[36m (1.9ms)[0m  [1mINSERT INTO `schema_migrations` (version) VALUES ('20151021073151')[0m
+D, [2016-12-13T04:01:02.762334 #26366] DEBUG -- :   [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT `schema_migrations`.* FROM `schema_migrations`
+D, [2016-12-13T04:01:02.778955 #26366] DEBUG -- :   [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+D, [2016-12-13T04:01:02.781376 #26366] DEBUG -- :   [1m[35mSQL (0.1ms)[0m  INSERT INTO `motions` (`hostid`, `flag`, `switchtime`, `created_at`, `updated_at`) VALUES ('pi1', 1, '2015-09-09 16:40:02', '2016-12-13 09:01:02', '2016-12-13 09:01:02')
+D, [2016-12-13T04:01:02.783987 #26366] DEBUG -- :   [1m[36m (2.3ms)[0m  [1mCOMMIT[0m
+D, [2016-12-13T04:01:02.784405 #26366] DEBUG -- :   [1m[35m (0.1ms)[0m  BEGIN
+D, [2016-12-13T04:01:02.785019 #26366] DEBUG -- :   [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO `motions` (`hostid`, `flag`, `switchtime`, `created_at`, `updated_at`) VALUES ('pi1', 0, '2015-09-09 16:40:32', '2016-12-13 09:01:02', '2016-12-13 09:01:02')[0m
+D, [2016-12-13T04:01:02.787155 #26366] DEBUG -- :   [1m[35m (1.9ms)[0m  COMMIT
+D, [2016-12-13T04:01:02.787591 #26366] DEBUG -- :   [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+D, [2016-12-13T04:01:02.788258 #26366] DEBUG -- :   [1m[35mSQL (0.1ms)[0m  INSERT INTO `motions` (`hostid`, `flag`, `switchtime`, `created_at`, `updated_at`) VALUES ('pi1', 1, '2015-09-09 16:53:12', '2016-12-13 09:01:02', '2016-12-13 09:01:02')
+D, [2016-12-13T04:01:02.790437 #26366] DEBUG -- :   [1m[36m (2.0ms)[0m  [1mCOMMIT[0m
+D, [2016-12-13T04:01:02.790863 #26366] DEBUG -- :   [1m[35m (0.1ms)[0m  BEGIN
+D, [2016-12-13T04:01:02.791488 #26366] DEBUG -- :   [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO `motions` (`hostid`, `flag`, `switchtime`, `created_at`, `updated_at`) VALUES ('pi1', 0, '2015-09-09 16:53:42', '2016-12-13 09:01:02', '2016-12-13 09:01:02')[0m
+D, [2016-12-13T04:01:02.793604 #26366] DEBUG -- :   [1m[35m (1.9ms)[0m  COMMIT
+D, [2016-12-13T04:01:02.794005 #26366] DEBUG -- :   [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+D, [2016-12-13T04:01:02.794612 #26366] DEBUG -- :   [1m[35mSQL (0.1ms)[0m  INSERT INTO `motions` (`hostid`, `flag`, `switchtime`, `created_at`, `updated_at`) VALUES ('pi1', 1, '2015-09-09 17:01:01', '2016-12-13 09:01:02', '2016-12-13 09:01:02')
+D, [2016-12-13T04:01:02.796782 #26366] DEBUG -- :   [1m[36m (1.9ms)[0m  [1mCOMMIT[0m
+D, [2016-12-13T04:01:02.797187 #26366] DEBUG -- :   [1m[35m (0.1ms)[0m  BEGIN
+D, [2016-12-13T04:01:02.797806 #26366] DEBUG -- :   [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO `motions` (`hostid`, `flag`, `switchtime`, `created_at`, `updated_at`) VALUES ('pi1', 0, '2015-09-09 17:01:31', '2016-12-13 09:01:02', '2016-12-13 09:01:02')[0m
+D, [2016-12-13T04:01:02.799963 #26366] DEBUG -- :   [1m[35m (1.9ms)[0m  COMMIT
+D, [2016-12-13T04:01:02.800357 #26366] DEBUG -- :   [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+D, [2016-12-13T04:01:02.800985 #26366] DEBUG -- :   [1m[35mSQL (0.1ms)[0m  INSERT INTO `motions` (`hostid`, `flag`, `switchtime`, `created_at`, `updated_at`) VALUES ('pi1', 1, '2015-09-09 17:03:41', '2016-12-13 09:01:02', '2016-12-13 09:01:02')
+D, [2016-12-13T04:01:02.807935 #26366] DEBUG -- :   [1m[36m (6.7ms)[0m  [1mCOMMIT[0m
+D, [2016-12-13T04:01:02.808365 #26366] DEBUG -- :   [1m[35m (0.1ms)[0m  BEGIN
+D, [2016-12-13T04:01:02.809052 #26366] DEBUG -- :   [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO `motions` (`hostid`, `flag`, `switchtime`, `created_at`, `updated_at`) VALUES ('pi1', 0, '2015-09-09 17:04:11', '2016-12-13 09:01:02', '2016-12-13 09:01:02')[0m
+D, [2016-12-13T04:01:02.811228 #26366] DEBUG -- :   [1m[35m (1.9ms)[0m  COMMIT
+D, [2016-12-13T04:01:02.811623 #26366] DEBUG -- :   [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+D, [2016-12-13T04:01:02.812259 #26366] DEBUG -- :   [1m[35mSQL (0.1ms)[0m  INSERT INTO `motions` (`hostid`, `flag`, `switchtime`, `created_at`, `updated_at`) VALUES ('pi1', 1, '2015-09-09 17:09:02', '2016-12-13 09:01:02', '2016-12-13 09:01:02')
+D, [2016-12-13T04:01:02.814342 #26366] DEBUG -- :   [1m[36m (1.9ms)[0m  [1mCOMMIT[0m
+D, [2016-12-13T04:01:02.814775 #26366] DEBUG -- :   [1m[35m (0.1ms)[0m  BEGIN
+D, [2016-12-13T04:01:02.815425 #26366] DEBUG -- :   [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO `motions` (`hostid`, `flag`, `switchtime`, `created_at`, `updated_at`) VALUES ('pi1', 0, '2015-09-09 17:09:32', '2016-12-13 09:01:02', '2016-12-13 09:01:02')[0m
+D, [2016-12-13T04:01:02.817552 #26366] DEBUG -- :   [1m[35m (1.9ms)[0m  COMMIT
+D, [2016-12-13T04:01:29.842218 #26477] DEBUG -- :   [1m[36m (14.7ms)[0m  [1mCREATE TABLE `schema_migrations` (`version` varchar(255) NOT NULL) ENGINE=InnoDB[0m
+D, [2016-12-13T04:01:29.854322 #26477] DEBUG -- :   [1m[35m (11.5ms)[0m  CREATE UNIQUE INDEX `unique_schema_migrations`  ON `schema_migrations` (`version`) 
+D, [2016-12-13T04:01:29.855225 #26477] DEBUG -- :   [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+I, [2016-12-13T04:01:29.857579 #26477]  INFO -- : Migrating to CreateMotions (20151021073151)
+D, [2016-12-13T04:01:29.864467 #26477] DEBUG -- :   [1m[35m (5.7ms)[0m  CREATE TABLE `motions` (`id` int(11) auto_increment PRIMARY KEY, `hostid` varchar(255), `flag` tinyint(1), `switchtime` datetime, `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB
+D, [2016-12-13T04:01:29.872903 #26477] DEBUG -- :   [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+D, [2016-12-13T04:01:29.875183 #26477] DEBUG -- :   [1m[35mSQL (0.1ms)[0m  INSERT INTO `schema_migrations` (`version`) VALUES ('20151021073151')
+D, [2016-12-13T04:01:29.877375 #26477] DEBUG -- :   [1m[36m (2.0ms)[0m  [1mCOMMIT[0m
+I, [2016-12-13T04:01:29.877440 #26477]  INFO -- : Migrating to CreateToirets (20160222071148)
+D, [2016-12-13T04:01:29.883062 #26477] DEBUG -- :   [1m[35m (4.9ms)[0m  CREATE TABLE `toirets` (`id` int(11) auto_increment PRIMARY KEY, `datetime` datetime, `flag` tinyint(1), `used_time` float, `toiret_floor` varchar(255), `toiret_num` varchar(255), `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB
+D, [2016-12-13T04:01:29.883415 #26477] DEBUG -- :   [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+D, [2016-12-13T04:01:29.883828 #26477] DEBUG -- :   [1m[35mSQL (0.1ms)[0m  INSERT INTO `schema_migrations` (`version`) VALUES ('20160222071148')
+D, [2016-12-13T04:01:29.885949 #26477] DEBUG -- :   [1m[36m (1.9ms)[0m  [1mCOMMIT[0m

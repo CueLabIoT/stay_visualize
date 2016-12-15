@@ -3,7 +3,7 @@ class CreateToirets < ActiveRecord::Migration
     create_table :toirets do |t|
       t.datetime :datetime
       t.boolean :flag
-      t.float :distance
+      t.float :used_time
       t.string :toiret_floor
       t.string :toiret_num
 

@@ -1,7 +1,6 @@
 class ToiretsController < ApplicationController
   def index
    @toiret_data = Toiret.all
-   @toiret_max = Toiret.maximum(:distance)
    @fifteenF = Toiret.where("toiret_floor = ?","15F").maximum(:datetime)
    @tenF = Toiret.where("toiret_floor = ?","10F").maximum(:datetime)
 
@@ -10,7 +9,6 @@ class ToiretsController < ApplicationController
 
   def situation
    @toiret_data = Toiret.all
-   @toiret_max = Toiret.maximum(:distance)
    @fifteenF = Toiret.where("toiret_floor = ?","15F").maximum(:datetime)
    @tenF = Toiret.where("toiret_floor = ?","10F").maximum(:datetime)
    @F60 = Toiret.where("toiret_floor = ?","6F").maximum(:datetime)
