@@ -12,23 +12,18 @@
         <div class="col-xs-1"></div>
         <div class="col-xs-10 col-md-5">
 		<!-- 上部の説明文-->
-		<font style="font-size:12em">
-		<% @check_toiret.each do |ctoiret| %>
+		<% @F60.each do |ctoiret| %>
 		<%= ctoiret.datetime %> <br/>
 		<%= ctoiret.toiret_floor %>
 		<% if ctoiret.flag == true then %>
-		 <span class="label label-danger">Closed</span>
+		 <%= image_tag 'opend.png' %>
 		<% else %>
-		 <span class="label label-success">Open</span>
+    <%= image_tag 'closed.png' %>
+     <span class="label label-success">Open</span>
 		<% end %>
 		<% end %>
-		左半分
-		</font>
 	</div>
         <div class="col-xs-10 col-md-5">
-		<font style="font-size:12em">
-		右半分
-		</font>
 	</div>
         <div class="col-xs-1"></div>
     </div>
