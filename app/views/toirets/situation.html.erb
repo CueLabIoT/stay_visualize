@@ -1,37 +1,40 @@
 <head>
 </head>
-
-<!-- 1.ナビゲーションバーの設定 -->
+<title>HEAVEN'S DOOR</title>
+<!-- It is system that will help you suffer from luck of toirets with power of Iot.. -->
 <div class="navbar navbar-inverse">
-        <!-- 2.ヘッダ情報 -->
         <div class="navbar-header">
             <a class="navbar-brand">HEAVEN'S DOOR</a>
-	</div>
+	      </div>
 </div>
 <div class="container-fluid">
     <div class="row">
-
-        <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
-          <table class="table table-striped">
-            <tr>
-              <td class="vert-align">
-                <h1>16F</h1>
-              </td>
-              <td class="vert-align text-align">
-                <% if true == true then %>
+      <% @toiret_vlist.each do |vtoiret| %>
+      <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+        <table class="table table-striped">
+          <tr>
+            <td class="vert-align">
+              <h1><%= vtoiret.toiret_floor %>F</h1>
+            </td>
+            <td class="vert-align text-align">
+              <% if vtoiret.flag1 then %>
+              <%= image_tag("closed.png", :class => "toiret_icon") %>
+              <% else %>
+              <%= image_tag("opened.png", :class => "toiret_icon") %>
+              <% end %>
+            </br>
+            <%= vtoiret.datetime1.strftime("%H:%M")%>
+            <td class="vert-align text-align">
+              <% if vtoiret.flag2 then %>
                 <%= image_tag("closed.png", :class => "toiret_icon") %>
-                <% else %>
-                <%= image_tag("opend.png", :class => "toiret_icon") %>
-                <% end %>
-              <td class="vert-align text-align">
-                <% if true == true then %>
-        		      <%= image_tag("opened.png", :class => "toiret_icon") %>
-        		    <% else %>
-                  <%= image_tag("closed.png", :class => "toiret_icon") %>
-        		    <% end %>
-            </tr>
-          </table>
-	    </div>
-
+              <% else %>
+                <%= image_tag("opened.png", :class => "toiret_icon") %>
+              <% end %>
+            </br>
+            <%= vtoiret.datetime2.strftime("%H:%M")%>
+          </tr>
+        </table>
+      </div>
+      <% end %>
     </div>
 </div>
