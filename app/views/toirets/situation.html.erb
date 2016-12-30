@@ -1,5 +1,6 @@
 <head>
 </head>
+
 <!-- 1.ナビゲーションバーの設定 -->
 <div class="navbar navbar-inverse">
         <!-- 2.ヘッダ情報 -->
@@ -9,21 +10,28 @@
 </div>
 <div class="container-fluid">
     <div class="row">
-        <div class="col-xs-1"></div>
-        <div class="col-xs-10 col-md-5">
-		<!-- 上部の説明文-->
-		<% @check_toiret.each do |ctoiret| %>
-		<%= ctoiret.datetime %> <br/>
-		<%= ctoiret.toiret_floor %> <br/>
-		<% if ctoiret.flag == true then %>
-		 <%= image_tag("closed.png", :size => "128x128") %>
-		<% else %>
-    <%= image_tag("opend.png", :size => "128x128") %>
-		<% end %>
-		<% end %>
-	</div>
-        <div class="col-xs-10 col-md-5">
-	</div>
-        <div class="col-xs-1"></div>
+
+        <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+          <table class="table table-striped">
+            <tr>
+              <td class="vert-align">
+                <h1>16F</h1>
+              </td>
+              <td class="vert-align text-align">
+                <% if true == true then %>
+                <%= image_tag("closed.png", :class => "toiret_icon") %>
+                <% else %>
+                <%= image_tag("opend.png", :class => "toiret_icon") %>
+                <% end %>
+              <td class="vert-align text-align">
+                <% if true == true then %>
+        		      <%= image_tag("opened.png", :class => "toiret_icon") %>
+        		    <% else %>
+                  <%= image_tag("closed.png", :class => "toiret_icon") %>
+        		    <% end %>
+            </tr>
+          </table>
+	    </div>
+
     </div>
 </div>

@@ -14,21 +14,21 @@
 ActiveRecord::Schema.define(version: 20160222071148) do
 
   create_table "motions", force: :cascade do |t|
-    t.string   "hostid",     limit: 255
+    t.string   "hostid"
     t.boolean  "flag"
     t.datetime "switchtime"
-    t.datetime "created_at",             null: false
-    t.datetime "updated_at",             null: false
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
   end
 
   create_table "toirets", force: :cascade do |t|
     t.datetime "datetime"
     t.boolean  "flag"
-    t.float    "used_time",    limit: 24
-    t.string   "toiret_floor", limit: 255
-    t.string   "toiret_num",   limit: 255
-    t.datetime "created_at",               null: false
-    t.datetime "updated_at",               null: false
+    t.float    "used_time"
+    t.string   "toiret_floor"
+    t.string   "toiret_num"
+    t.datetime "created_at",   null: false
+    t.datetime "updated_at",   null: false
   end
 
 end

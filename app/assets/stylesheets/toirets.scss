@@ -1,3 +1,19 @@
 // Place all the styles related to the Toirets controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+h1 {
+    font-size : 3em;   /* 48px */
+    line-height : 1;   /* 48px */
+}
+img.toiret_icon {
+width: 7em;
+height: 7em;
+}
+.table tbody>tr>td.vert-align
+{
+    vertical-align: middle;
+}
+.table tbody>tr>td.text-align
+{
+  text-align: center;
+}
