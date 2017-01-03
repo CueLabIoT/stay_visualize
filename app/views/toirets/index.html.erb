@@ -13,7 +13,6 @@
   トイレ不足に悩むあなたをIoTのテクノロジーで助けたい、</br>
   そんな思いで生まれたアプリケーションです。</p>
 </div>
-
 <table class="table table-striped">
   <tr>
     <th>Time</th>
@@ -22,7 +21,7 @@
     <th>いる/いない</th>
     <th>使った/空いてた時間</th>
   </tr>
-<% @toiret_maxdate_group.each do |toiret| %>
+<% @toiret_data.each do |toiret| %>
   <tr>
     <td><%= toiret.datetime %></td>
     <td><%= toiret.toiret_floor %></td>
