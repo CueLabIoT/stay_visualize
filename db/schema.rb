@@ -11,7 +11,17 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160222071148) do
+ActiveRecord::Schema.define(version: 20170223095754) do
+
+  create_table "meetings", force: :cascade do |t|
+    t.datetime "datetime"
+    t.boolean  "flag"
+    t.float    "used_time"
+    t.integer  "room_floor"
+    t.string   "room_name"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
 
   create_table "motions", force: :cascade do |t|
     t.string   "hostid"

@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  get 'meeting/show'
+
   get 'toirets/index'
   get 'toirets/situation'
   get 'toirets/meeting'

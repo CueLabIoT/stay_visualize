@@ -54,3 +54,4 @@ Toiret.create(:datetime => '2015-09-09 17:12:32',:flag => 0,:used_time => 250.0,
 Toiret.create(:datetime => '2015-09-09 17:14:32',:flag => 1,:used_time => 250.0,:toiret_floor => '15',:toiret_num => '1')
 Toiret.create(:datetime => '2015-09-09 17:12:32',:flag => 0,:used_time => 250.0,:toiret_floor => '16',:toiret_num => '0')
 Toiret.create(:datetime => '2015-09-09 17:14:32',:flag => 1,:used_time => 250.0,:toiret_floor => '16',:toiret_num => '1')
+Meeting.create(:datetime => '2017-02-23 17:14:32',:flag => 1,:used_time => 250.0,:room_floor => '17',:room_name => '17C')

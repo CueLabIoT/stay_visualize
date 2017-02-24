@@ -1,0 +1,38 @@
+<head>
+</head>
+<title>MEETING ROOM STATUS</title>
+<!-- It is system that will help you suffer from luck of toirets with power of Iot.. -->
+<div class="navbar navbar-inverse">
+        <div class="navbar-header">
+            <a class="navbar-brand">MEETING ROOM STATUS</a>
+	      </div>
+</div>
+<div class="container-fluid">
+    <div class="row">
+      <% @latest_room_status.each do |room| %>
+      <div class="col-sm-12 col-md-6">
+        <table class="table table-striped">
+          <tr>
+            <td class="vert-align">
+              <h1><%= room.room_name %></h1>
+            </td>
+            <td class="vert-align text-align">
+              <% if room.flag then %>
+              <%= image_tag("closed.png", :class => "toiret_icon") %>
+              <% else %>
+              <%= image_tag("opened.png", :class => "toiret_icon") %>
+              <% end %>
+            </td>
+            <td class="vert-align text-align">
+              <h2>
+             <%= room.datetime.strftime("%H:%M")%>
+              </h2>
+             経過時間：
+             <%= ((Time.now - room.datetime)/60).to_i %>分
+            </td>
+          </tr>
+        </table>
+      </div>
+      <% end %>
+    </div>
+</div>
