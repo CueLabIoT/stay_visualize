@@ -13,12 +13,14 @@ class ServerRequestController < ApplicationController
 	if !json_request.blank? then
 	  #meetingだったら、会議室システム
 	  if json_request["type"] == "meeting" then
-	   new_motion = Motion.new
-           new_motion.hostid = json_request["id"]
-           new_motion.flag = json_request["flag"]
-           new_motion.switchtime = json_request["exedate"]
-           new_motion.save
-	   render nothing: true
+			new_meeting = Meeting.new
+			new_meeting.room_floor = json_request["room_floor"]
+			new_meeting.room_name = json_request["room_name"]
+			new_meeting.used_time = json_request["used_time"]
+			new_meeting.flag = json_request["flag"]
+			new_meeting.datetime = json_request["datetime"]
+			new_meeting.save
+			render nothing: true
 	  #toiretだったら、HEAVN'S DOOR
 	  elsif json_request["type"] == "toiret" then
 	   new_toiret = Toiret.new
@@ -29,15 +31,6 @@ class ServerRequestController < ApplicationController
 	   new_toiret.datetime = json_request["datetime"]
 	   new_toiret.save
 	   render nothing: true
-	  elsif json_request["type"] == "meeting" then
-		 new_meeting = Meeting.new
-		 new_meeting.room_floor = json_request["room_floor"]
-		 new_meeting.room_name = json_request["room_name"]
-		 new_meeting.used_time = json_request["used_time"]
-		 new_meeting.flag = json_request["flag"]
-		 new_meeting.datetime = json_request["datetime"]
-		 new_meeting.save
-		 render nothing: true
 	  else
 	   personal = {'status' => 500}
 	  end
